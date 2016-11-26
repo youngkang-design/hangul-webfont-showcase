@@ -3,7 +3,9 @@ const webpack = require('webpack');
 const merge = require('webpack-merge');
 const common = require('./common');
 
-module.exports = merge.smart(common, {
+module.exports = merge.strategy({
+  entry: 'prepend'
+})(common, {
   entry: [
     'react-hot-loader/patch',
     'webpack-dev-server/client?http://localhost:8080',
