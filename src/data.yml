@@ -1,8 +1,8 @@
 # YAML syntax: http://docs.ansible.com/ansible/YAMLSyntax.html
-fonts:
-  - text: 돋움체∙SANS-SERIF
+groups:
+  - title: 돋움체∙SANS-SERIF
     items:
-      - name: 고도체
+      - name: 고도체캬캬
         desc: 설명설명
       - name: 나눔고딕
         desc: 설명설명
@@ -28,7 +28,7 @@ fonts:
         desc: 설명설명
       - name: THE 정고딕
         desc: 설명설명
-  - text: 바탕체∙SERIF
+  - title: 바탕체∙SERIF
     items:
       - name: 나눔명조
         desc: 설명설명

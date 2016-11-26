@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './Home.sass';
 import FontGroup from '../FontGroup'
+import data from '../../data.yml'
 
 export default class Home extends React.Component {
   render() {
@@ -11,12 +12,9 @@ export default class Home extends React.Component {
         <div>한글 웹폰트 글꼴보기집이 다양한 환경에서의 한글 웹 타이포그래피를 다루는 디자이너와 개발자에게 도움이 되길 바랍니다.</div>
       </div>
       <div className={s.menu}>
-        <div className={s.fontGroup}>
-          <FontGroup></FontGroup>
-        </div>
-        <div className={s.fontGroup}>
-          <FontGroup></FontGroup>
-        </div>
+        {data.groups.map((group, index) => <div className={s.fontGroup} key={index}>
+          <FontGroup groupIndex={index} groupTitle={group.title} fontNames={group.items.map(i => i.name)}></FontGroup>
+        </div>)}
       </div>
       <div className={s.footer}>
         <a href="http://youngkang.me">강영화</a> 디자인∙<a href="mailto:seungha.me@gmail.com">김승하</a> 도움 <br/>
