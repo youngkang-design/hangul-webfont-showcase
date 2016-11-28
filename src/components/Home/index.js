@@ -5,6 +5,7 @@ import data from '../../data.yml'
 
 export default class Home extends React.Component {
   render() {
+    const {onFontClicked} = this.props
     return <div>
       <div className={s.title}>한글 웹폰트 글꼴보기집</div>
       <div className={s.description}>
@@ -13,7 +14,7 @@ export default class Home extends React.Component {
       </div>
       <div className={s.menu}>
         {data.groups.map((group, index) => <div className={s.fontGroup} key={index}>
-          <FontGroup groupIndex={index} groupTitle={group.title} fontNames={group.items.map(i => i.name)}></FontGroup>
+          <FontGroup groupIndex={index} groupTitle={group.title} fontNames={group.items.map(i => i.name)} onFontClicked={onFontClicked}></FontGroup>
         </div>)}
       </div>
       <div className={s.footer}>

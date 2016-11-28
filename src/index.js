@@ -1,26 +1,27 @@
-// ./src/index.js
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import {AppContainer} from 'react-hot-loader'
+import {Provider} from 'react-redux'
 
-import { AppContainer } from 'react-hot-loader';
-// AppContainer is a necessary wrapper component for HMR
-
-import App from './components/App';
+import MainNavigation from './connections/MainNavigation'
+import store from './store'
 
 const render = () => {
   ReactDOM.render(
     <AppContainer>
-      <App/>
+      <Provider store={store}>
+        <MainNavigation/>
+      </Provider>
     </AppContainer>,
     document.getElementById('root')
   );
 };
 
-render();
+render()
 
 // Hot Module Replacement API
 if (module.hot) {
-  module.hot.accept('./components/App', render);
+  module.hot.accept('./connections/MainNavigation', render)
 }
 
 window.render = render;
