@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "clean": "rimraf ./dist",
     "build": "cross-env NODE_ENV=production webpack --config webpack/production.js",
     "start": "webpack-dev-server --config webpack/development.js",
-    "deploy": "npm run build && gh-pages -d dist"
+    "deploy": "npm run clean && npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "babel": "^6.5.2",
@@ -31,6 +32,7 @@
     "redux": "^3.6.0",
     "redux-actions": "^1.1.0",
     "redux-saga": "^0.13.0",
+    "rimraf": "^2.5.4",
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
     "webpack": "^2.1.0-beta.27",
