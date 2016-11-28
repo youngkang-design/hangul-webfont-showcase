@@ -1,15 +1,38 @@
 @import '../../variables'
+@import '../../animation'
+
+.wrap
+  position: relative
+
+@keyframes title
+  from
+    left: -60px
+  to
+    opacity: 1
+    left: 0
 
 .title
   margin: 24px 24px 0
   font-size: 18px
   font-weight: bold
   color: $main-gray
+  +common-animation-properties
+  animation-name: title
+
+@keyframes slide-up
+  from
+    top: 40px
+  to
+    opacity: 1
+    top: 0
 
 .description
   margin: 36px 24px 0
   font-size: 16px
   line-height: 1.5
+  +common-animation-properties
+  +delayed
+  animation-name: slide-up
   & > div
     color: $main-gray
     &:not(:first-child)
@@ -17,6 +40,9 @@
 
 .fontGroup
   margin: 66px 20px 0
+  +common-animation-properties
+  +delayed
+  animation-name: slide-up
 
 .menu
 

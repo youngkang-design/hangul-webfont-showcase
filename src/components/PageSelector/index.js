@@ -1,4 +1,7 @@
 import React, {PropTypes} from 'react'
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
+
+import s from './PageSelector.sass'
 
 export default class SimpleSwitcher extends React.Component {
   static propTypes = {
@@ -13,10 +16,11 @@ export default class SimpleSwitcher extends React.Component {
 
   render() {
     const {selected, rendererMap} = this.props
-    if (selected in rendererMap) {
-      return rendererMap[selected]()
-    } else {
-      return null
-    }
+    return <ReactCSSTransitionGroup
+      transitionEnterTimeout={1000}
+      transitionLeaveTimeout={500}
+      transitionName={s}>
+      {rendererMap[selected]()}
+    </ReactCSSTransitionGroup>
   }
 }

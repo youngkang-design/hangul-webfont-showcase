@@ -1,0 +1,41 @@
+@import '../../variables'
+
+@keyframes appear
+  0%
+    height: 0
+  25%
+    height: 0
+  26%
+    height: auto
+  100%
+    height: auto
+
+.wrap
+  position: relative
+
+.enter
+  position: relative
+  overflow: hidden
+  height: 0
+.enterActive
+  animation-name: appear
+  animation-duration: 2s
+  height: auto
+
+.enter:after
+  display: block
+  content: ''
+  position: fixed
+  z-index: 1
+  background-color: $main-green
+  width: 100vw
+  height: 400vh
+  top: 100vh
+  transition: top 1s
+.enterActive:after
+  top: -400vh
+
+.leave
+  position: relative
+.leaveActive
+  position: relative

@@ -6,13 +6,13 @@ import HomePage from './HomePage'
 import FontPage from './FontPage'
 
 const rendererMap = {
-  homePage: () => <HomePage></HomePage>,
-  fontPage: () => <FontPage></FontPage>
+  homePage: () => <HomePage key={1}></HomePage>,
+  fontPage: () => <FontPage key={2}></FontPage>
 }
 
 export default connect(
-  ({font}) => ({
-    selected: font === null ? 'homePage' : 'fontPage',
+  ({home}) => ({
+    selected: home ? 'homePage' : 'fontPage',
     rendererMap: rendererMap
   })
 )(PageSelector)

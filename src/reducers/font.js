@@ -5,5 +5,12 @@ import {
 } from '../actions'
 
 export default handleActions({
-  [FontChanged]: (s, {payload: [groupIndex, itemIndex]}) => [groupIndex, itemIndex]
+  [FontChanged]: (s, {payload}) => {
+    if (payload === null) {
+      return null
+    } else {
+      const [groupIndex, itemIndex] = payload
+      return [groupIndex, itemIndex]
+    }
+  }
 }, null)
