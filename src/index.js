@@ -5,13 +5,17 @@ import {Provider} from 'react-redux'
 
 import s from './global.scss'
 import MainNavigation from './connections/MainNavigation'
+import Curtain from './connections/Curtain'
 import store from './store'
 
 const render = () => {
   ReactDOM.render(
     <AppContainer>
       <Provider store={store}>
-        <MainNavigation/>
+        <div>
+          <MainNavigation/>
+          <Curtain/>
+        </div>
       </Provider>
     </AppContainer>,
     document.getElementById('root')

@@ -1,0 +1,41 @@
+@keyframes rotate
+  35%
+    transform: none
+  100%
+    transform: rotate(4turn)
+
+.wrap
+  display: inline-block
+  animation-name: rotate
+  animation-duration: 5s
+  animation-iteration-count: infinite
+
+.row
+  display: flex
+
+.box
+  margin: 1px
+  border-radius: 2px
+  background-color: white
+  width: 9px
+  height: 9px
+  animation-name: blink
+  animation-duration: 5s
+  animation-iteration-count: infinite
+
+.box2
+  animation-delay: .5s
+
+.box3
+  animation-delay: 1s
+
+.box4
+  animation-delay: 1.5s
+
+@keyframes blink
+  0%
+    opacity: 1
+  5%
+    opacity: 0
+  10%
+    opacity: 1
