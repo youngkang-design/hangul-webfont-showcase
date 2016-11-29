@@ -1,1 +1,5 @@
-run `npm start` to run server, `npm run deploy` to deploy
+# Run server
+`npm start`
+
+# Deploy
+`npm run deploy`
