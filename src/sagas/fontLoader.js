@@ -20,7 +20,7 @@ function* loadFont(document, {payload: {groupIndex, itemIndex}}) {
   const {url, family} = getFontItem(data, groupIndex, itemIndex)
   const observer = new FontFaceObserver(family)
   yield put(createAction(CurtainEntering))
-  if (url) {
+  if (url && !isFontLoaded(document, url)) {
     const link = document.createElement('link')
     link.rel = 'stylesheet'
     link.href = url
@@ -28,7 +28,6 @@ function* loadFont(document, {payload: {groupIndex, itemIndex}}) {
   }
   yield delay(500)
   const indicatorTask = yield fork(showLoadingIndicator)
-  yield delay(3000)
   yield observer.load()
   yield cancel(indicatorTask)
   yield put(createAction(FontChanged, {groupIndex, itemIndex}))
@@ -39,4 +38,8 @@ function* loadFont(document, {payload: {groupIndex, itemIndex}}) {
 function* showLoadingIndicator() {
   yield delay(500)
   yield put(createAction(CurtainLoading))
+}
+
+function isFontLoaded(document, url) {
+  return !!document.querySelector(`link[href="${url}"]`)
 }

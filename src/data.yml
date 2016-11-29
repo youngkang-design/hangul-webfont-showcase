@@ -54,8 +54,8 @@ groups:
             weight: 800
       - name: 바른돋움체
         desc: 설명설명
-        family: BarunDotum
-        url: https://cdn.rawgit.com/young-ha/webfont-archive/master/css/BarunDotum.css
+        family: BareunDotum
+        url: https://cdn.rawgit.com/young-ha/webfont-archive/master/css/BareunDotum.css
         weightSet:
           - name: Light
             weight: 300
