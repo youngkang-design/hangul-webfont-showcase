@@ -2,46 +2,208 @@
 groups:
   - title: 돋움체∙SANS-SERIF
     items:
-      - name: 고도체캬캬
+      - name: 고도체
         desc: 설명설명
+        family: Godo
+        url: https://cdn.rawgit.com/young-ha/webfont-archive/master/css/Godo.css
+        weightSet:
+          - name: Medium
+            weight: 500
+            default: true
+          - name: Bold
+            weight: 700
       - name: 나눔고딕
         desc: 설명설명
+        family: NanumGothic
+        url: https://cdn.rawgit.com/young-ha/webfont-archive/master/css/NanumGothic.css
+        weightSet:
+          - name: Medium
+            weight: 500
+            default: true
+          - name: Bold
+            weight: 700
+          - name: ExtraBold
+            weight: 800
       - name: 나눔바른고딕
         desc: 설명설명
+        family: NanumBarunGothic
+        url: https://cdn.rawgit.com/young-ha/webfont-archive/master/css/NanumBarunGothic.css
+        weightSet:
+          - name: UltraLight
+            weight: 200
+          - name: Light
+            weight: 300
+          - name: Medium
+            weight: 500
+            default: true
+          - name: Bold
+            weight: 700
       - name: 나눔스퀘어
         desc: 설명설명
+        family: NanumSquare
+        url: https://cdn.rawgit.com/young-ha/webfont-archive/master/css/NanumSquare.css
+        weightSet:
+          - name: Light
+            weight: 300
+          - name: Regular
+            weight: 400
+            default: true
+          - name: Bold
+            weight: 700
+          - name: ExtraBold
+            weight: 800
       - name: 바른돋움체
         desc: 설명설명
+        family: BarunDotum
+        url: https://cdn.rawgit.com/young-ha/webfont-archive/master/css/BarunDotum.css
+        weightSet:
+          - name: Light
+            weight: 300
+          - name: Regular
+            weight: 400
+            default: true
+          - name: Bold
+            weight: 700
       - name: 본고딕
         desc: 설명설명
+        family: NotoSansCJKkr
+        url: https://cdn.rawgit.com/young-ha/webfont-archive/master/css/NotoSansCJKkr.css
+        weightSet:
+          - name: Thin
+            weight: 100
+          - name: Light
+            weight: 200
+          - name: DemiLight
+            weight: 300
+          - name: Regular
+            weight: 400
+            default: true
+          - name: Medium
+            weight: 500
+          - name: Bold
+            weight: 700
+          - name: Black
+            weight: 900
       - name: 스포카 한 산스
         desc: 스포카 한 산스는 국문, 영문, 일문, 숫자, 글리프의 어울림이 훌륭합니다. 특히 미려한 숫자는 수치 표기에 탁월합니다. 가는 굵기(Thin), 보통 굵기(Regular), 두꺼운 굵기(Bold) 세 가지 자족으로, 디지털 환경에서 언어를 아름답게 표현합니다.
+        family: Spoqa Han Sans
+        url: null
+        weightSet:
+          - name: Thin
+            weight: 100
+          - name: Regular
+            weight: 400
+            default: true
+          - name: Bold
+            weight: 700
       - name: 아리따 돋움
         desc: 설명설명
+        family: Arita-dotum
+        url: https://cdn.rawgit.com/young-ha/webfont-archive/master/css/Arita-dotum.css
+        weightSet:
+          - name: Thin
+            weight: 100
+          - name: Light
+            weight: 300
+          - name: Medium
+            weight: 500
+            default: true
+          - name: SemiBold
+            weight: 600
+          - name: Bold
+            weight: 700
       - name: 청소년체
         desc: 설명설명
+        family: Youth
+        url: https://cdn.rawgit.com/young-ha/webfont-archive/master/css/Youth.css
+        weightSet:
+          - name: Regular
+            weight: 400
       - name: 푸른전남체
         desc: 설명설명
+        family: PureunJeonnam
+        url: https://cdn.rawgit.com/young-ha/webfont-archive/master/css/PureunJeonnam.css
+        weightSet:
+          - name: Medium
+            weight: 500
+          - name: Bold
+            weight: 700
       - name: 함초롬돋움
         desc: 설명설명
-      - name: THE 명품고딕
-        desc: 설명설명
-      - name: THE 정고딕
-        desc: 설명설명
+        family: HANDotum
+        url: https://cdn.rawgit.com/young-ha/webfont-archive/master/css/HANDotum.css
+        weightSet:
+          - name: Medium
+            weight: 500
+          - name: Bold
+            weight: 700
   - title: 바탕체∙SERIF
     items:
       - name: 나눔명조
         desc: 설명설명
+        family: NanumMyeongjo
+        url: https://cdn.rawgit.com/young-ha/webfont-archive/master/css/NanumMyeongjo.css
+        weightSet:
+          - name: Medium
+            weight: 500
+          - name: Bold
+            weight: 700
+          - name: ExtraBold
+            weight: 800
       - name: 바른바탕체
         desc: 설명설명
+        family: BareunBatang
+        url: https://cdn.rawgit.com/young-ha/webfont-archive/master/css/BareunBatang.css
+        weightSet:
+          - name: Light
+            weight: 300
+          - name: Medium
+            weight: 500
+            default: true
+          - name: Bold
+            weight: 700
       - name: 수화명조
         desc: 설명설명
+        family: SHMyungjo
+        url: https://cdn.rawgit.com/young-ha/webfont-archive/master/css/SHMyungjo.css
+        weightSet:
+          - name: Thin
+            weight: 100
+          - name: Regular
+            weight: 400
+            default: true
       - name: 아리따 부리
         desc: 설명설명
+        family: Arita-buri
+        url: https://cdn.rawgit.com/young-ha/webfont-archive/master/css/Arita-buri.css
+        weightSet:
+          - name: Thin
+            weight: 100
+          - name: Light
+            weight: 300
+          - name: Medium
+            weight: 500
+            default: true
+          - name: SemiBold
+            weight: 600
+          - name: Bold
+            weight: 700
       - name: 한겨레결체
         desc: 설명설명
+        family: Hankyoreh
+        url: https://cdn.rawgit.com/young-ha/webfont-archive/master/css/Hankyoreh.css
+        weightSet:
+          - name: Medium
+            weight: 500
       - name: 함초롬바탕
         desc: 설명설명
+        family: HANBatang
+        url: https://cdn.rawgit.com/young-ha/webfont-archive/master/css/HANBatang.css
+        weightSet:
+          - name: Medium
+            weight: 500
+          - name: Bold
+            weight: 700
 waterfall:
   - size: 58px
     text: 바람에 쉬이 흩어지는 모래알로 성을 쌓는다.
