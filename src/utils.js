@@ -5,3 +5,7 @@ export function leftpad(padString, length, target) {
     return target
   }
 }
+
+export function getFontItem(fontData, groupIndex, itemIndex) {
+  return fontData.groups[groupIndex].items[itemIndex]
+}

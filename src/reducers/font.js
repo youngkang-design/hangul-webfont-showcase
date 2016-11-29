@@ -9,8 +9,8 @@ export default handleActions({
     if (payload === null) {
       return null
     } else {
-      const [groupIndex, itemIndex] = payload
-      return [groupIndex, itemIndex]
+      const {groupIndex, itemIndex} = payload
+      return {groupIndex, itemIndex}
     }
   }
 }, null)

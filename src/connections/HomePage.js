@@ -1,14 +1,13 @@
 import {connect} from 'react-redux'
 
 import Home from '../components/Home'
-import createAction, {FontChanged, HomeLeaved} from '../actions' // FIXME
+import createCommand, {SelectFont} from '../commands'
 
 export default connect(
   null,
   dispatch => ({
-    onFontClicked: ([groupIndex, itemIndex]) => {
-      dispatch(createAction(FontChanged, [groupIndex, itemIndex]))
-      dispatch(createAction(HomeLeaved))
+    onFontClicked: ({groupIndex, itemIndex}) => {
+      dispatch(createCommand(SelectFont, {groupIndex, itemIndex}))
     }
   })
 )(Home)

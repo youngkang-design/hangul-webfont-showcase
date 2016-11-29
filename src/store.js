@@ -21,4 +21,8 @@ export default createStore(
   )
 )
 
-sagaMiddleware.run(rootSaga)
+sagaMiddleware.run(
+  rootSaga,
+  document,
+  history
+)
