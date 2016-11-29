@@ -1,0 +1,69 @@
+@import '../../variables'
+
+$area-border: solid 2px #e1e4e6
+
+.topNav
+  display: flex
+  justify-content: space-between
+  line-height: 18px
+  padding: 19px 21px
+  border-bottom: solid 1px #e1e4e6
+
+.title
+  font-size: 18px
+  font-weight: bold
+  color: $main-gray
+
+.menuButton
+  font-size: 16px
+  font-weight: bold
+  color: $light-green
+
+.content
+  padding: 0 20px
+
+.fontName
+  margin-top: 40px
+  font-size: 30px
+  color: $main-gray
+
+.fontDescription
+  margin-top: 55px
+  font-size: 16px
+  line-height: 1.5
+
+.externalLinks
+  display: flex
+  justify-content: space-between
+  padding: 30px 20px 70px
+  border-bottom: $area-border
+
+.linkButton
+  height: 52px
+  line-height: 50px
+  border: solid 1px #63e6be
+  box-sizing: border-box
+  border-radius: 6px
+  color: $light-green
+  font-weight: bold
+  font-size: 16px
+  text-align: center
+  flex-grow: 1
+  &:first-of-type
+    margin-right: 10px
+  &:after
+    display: inline
+    content: '>'
+    color: #63e6be
+    margin-left: 7px
+
+.areaTitle
+  color: $light-gray
+  font-weight: bold
+  font-size: 16px
+
+.preview
+  overflow: hidden
+
+.rendering
+  overflow: hidden

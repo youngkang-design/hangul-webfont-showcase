@@ -12,6 +12,9 @@ module.exports = {
     path: resolve(__dirname, '..', 'dist')
   },
   context: resolve(__dirname, '..', 'src'),
+  // resolve: {
+  //   extensions: ['.js', '.css']
+  // },
   module: {
     loaders: [
       { test: /\.js$/,

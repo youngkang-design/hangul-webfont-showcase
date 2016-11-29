@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import {AppContainer} from 'react-hot-loader'
 import {Provider} from 'react-redux'
 
+import s from './global.scss'
 import MainNavigation from './connections/MainNavigation'
 import store from './store'
 
