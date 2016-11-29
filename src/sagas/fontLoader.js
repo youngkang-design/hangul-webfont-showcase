@@ -27,9 +27,10 @@ function* loadFont(document, {payload: {groupIndex, itemIndex}}) {
   }
   yield put(createAction(CurtainEntering))
   yield delay(500)
-  const indicatorTask = yield fork(showLoadingIndicator)
-  yield observer.load()
-  yield cancel(indicatorTask)
+  yield fork(showLoadingIndicator)
+  try {
+    yield observer.load('한글', 10000) // FIXME
+  } catch(e) {}
   yield put(createAction(FontChanged, {groupIndex, itemIndex}))
   yield put(createAction(HomeLeaved))
   yield put(createAction(CurtainLeaving))
