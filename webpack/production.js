@@ -8,7 +8,10 @@ module.exports = merge.smart(common, {
   plugins: [
     new webpack.optimize.UglifyJsPlugin(),
     new CopyWebpackPlugin([
-      {from: path.join(path.resolve(__dirname, '..', 'src', 'static'), '**/*')}
+      {
+        context: path.resolve(__dirname, '..', 'src', 'static'),
+        from: '**/*'
+      }
     ])
   ]
 })
