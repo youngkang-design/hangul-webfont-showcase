@@ -1,0 +1,12 @@
+$breakpoint: 425px
+
+=desktop
+  @media (min-width: $breakpoint + 1px)
+    @content
+
+=responsive-container
+  margin: 0 auto
+  padding: 0 20px
+  +desktop
+    max-width: 940px
+    padding: 0 10px

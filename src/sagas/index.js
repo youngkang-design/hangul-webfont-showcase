@@ -1,12 +1,14 @@
 import historySaga from './history'
 import fontLoader from './fontLoader'
 import home from './home'
+import mobile from './mobile'
 
-export default function* rootSaga(document, history) {
+export default function* rootSaga(window) {
   console.log('Hello Sagas!')
   yield [
-    fontLoader(document),
-    historySaga(history),
+    fontLoader(window.document),
+    historySaga(window.history),
     home(),
+    mobile(window)
   ]
 }

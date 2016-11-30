@@ -1,12 +1,15 @@
 @import '../../variables'
+@import '../../mixins'
 
 $area-border: solid 2px #e1e4e6
 
 .topNav
+  +responsive-container
   display: flex
   justify-content: space-between
   line-height: 18px
-  padding: 19px 21px
+  padding-top: 19px
+  padding-bottom: 19px
   border-bottom: $area-border
   border-bottom-width: 1px
 
@@ -22,7 +25,7 @@ $area-border: solid 2px #e1e4e6
   color: $light-green
 
 .content
-  padding: 0 20px
+  +responsive-container
 
 .fontName
   margin-top: 40px
@@ -71,7 +74,8 @@ $area-border: solid 2px #e1e4e6
   font-weight: bold
   font-size: 16px
 
-.preview
+.previewSection
+  +responsive-container
   overflow: hidden
 
 .rendering
