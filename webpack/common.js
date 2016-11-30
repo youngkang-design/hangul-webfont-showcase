@@ -37,6 +37,13 @@ module.exports = {
           'json-loader',
           'yaml-loader'
         ]
+      },
+      {
+        test: /\.svg$/,
+        loaders: [
+          'babel-loader',
+          'svg-react-loader'
+        ]
       }
     ],
   },

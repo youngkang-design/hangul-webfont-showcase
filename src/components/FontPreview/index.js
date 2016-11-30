@@ -2,7 +2,12 @@
 
 import React from 'react'
 import TextArea from 'react-textarea-autosize'
+
+import HorizontalSlider from '../HorizontalSlider'
 import s from './FontPreview.sass'
+import SVGFontSize from './font-size.svg'
+import SVGLetterSpacing from './letter-spacing.svg'
+import SVGLineHeight from './line-height.svg'
 
 export default class FontPreview extends React.Component {
   constructor(props) {
@@ -43,9 +48,9 @@ export default class FontPreview extends React.Component {
     } = weightSet[selectedWeightIndex]
     const style = {
       fontFamily,
-      fontSize,
+      fontSize: `${fontSize}px`,
       lineHeight,
-      letterSpacing,
+      letterSpacing: `${letterSpacing}em`,
       fontWeight,
       textAlign,
       border: 'none',
@@ -59,6 +64,7 @@ export default class FontPreview extends React.Component {
     return <div className={s.wrap}>
       <div className={s.menu}>
         <select
+          className={s.select}
           value={selectedWeightIndex}
           onChange={e => this.setState({selectedWeightIndex: e.target.value})}>
           {weightSet.map((item, index) => {
@@ -71,10 +77,37 @@ export default class FontPreview extends React.Component {
           <div className={s.alignButton} onClick={() => this.setState({textAlign: 'center'})}>C</div>
           <div className={s.alignButton} onClick={() => this.setState({textAlign: 'right'})}>R</div>
         </div>
+        <div className={s.sliders}>
+          <div className={s.slider}>
+            <SVGFontSize />
+            <HorizontalSlider min={10} max={100} initialValue={fontSize}
+              onValueChange={(fontSize) => {
+                this.setState({fontSize})
+                this.textArea._resizeComponent()
+              }}/>
+          </div>
+          <div className={s.slider}>
+            <SVGLineHeight />
+            <HorizontalSlider min={1} max={2} initialValue={lineHeight}
+              onValueChange={(lineHeight) => {
+                this.setState({lineHeight})
+                this.textArea._resizeComponent()
+              }}/>
+          </div>
+          <div className={s.slider}>
+            <SVGLetterSpacing />
+            <HorizontalSlider min={-0.1} max={1} initialValue={letterSpacing}
+              onValueChange={(letterSpacing) => {
+                this.setState({letterSpacing})
+                this.textArea._resizeComponent()
+              }}/>
+          </div>
+        </div>
       </div>
       <TextArea
         style={style}
-        defaultValue={exampleText} />
+        defaultValue={exampleText}
+        ref={el => this.textArea = el} />
     </div>
   }
 }

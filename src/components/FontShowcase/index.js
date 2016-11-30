@@ -22,7 +22,7 @@ export default class FontShowcase extends React.Component {
     } = getFontItem(data, groupIndex, itemIndex)
     const waterfallItems = mobile ? data.waterfall.items.mobile : data.waterfall.items.desktop
 
-    return <div>
+    return <div className={s.wrap}>
       <div className={s.topNav}>
         <div className={s.title} onClick={onTitleClicked}>한글 웹폰트 글꼴보기집</div>
         <div className={s.menuButton}>글꼴 목록</div>
