@@ -3,9 +3,6 @@ import classNames from 'classnames'
 
 import s from './HorizontalSlider.sass'
 
-export const paddingLeft = 14
-export const paddingRight = 19.5
-
 export default class HorizontalSlider extends React.Component {
   static propTypes = {
     onValueChange: PropTypes.func,
@@ -24,9 +21,13 @@ export default class HorizontalSlider extends React.Component {
   ratioToValue = ratio => this.props.min + (this.props.max - this.props.min) * ratio
   valueToRatio = value => (value - this.props.min) / (this.props.max - this.props.min)
   handleDragging = e => {
+    const target = e.currentTarget
+    const style = window.getComputedStyle(target)
+    const paddingLeft = parseInt(style.getPropertyValue('padding-left'))
+    const paddingRight = parseInt(style.getPropertyValue('padding-right'))
     const {onValueChange} = this.props
-    const areaWidth = e.currentTarget.clientWidth - paddingLeft - paddingRight
-    const rect = e.currentTarget.getBoundingClientRect()
+    const areaWidth = target.clientWidth - paddingLeft - paddingRight
+    const rect = target.getBoundingClientRect()
     const offset = e.clientX - rect.left
     const normalized = Math.min(Math.max(0, offset - paddingLeft), areaWidth)
     const ratio = normalized / areaWidth

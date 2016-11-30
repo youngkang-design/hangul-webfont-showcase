@@ -1,11 +1,9 @@
+@import './variables'
 @import '../../variables'
 
 $height: 24px
 $bar-width: 128px
 $cursor-size: 12px
-/* NOTE: paddings must be equal to relative values in index.js (paddingLeft, paddingRight)*/
-$padding-left: 14px
-$padding-right: 19.5px
 
 .wrap
   display: flex
@@ -18,7 +16,9 @@ $padding-right: 19.5px
   display: flex
   position: relative
   height: $height
-  width: $bar-width + $padding-left + $padding-right
+  padding-left: $padding-left
+  padding-right: $padding-right
+  width: $bar-width
   align-items: center
   cursor: pointer
   overflow: hidden
@@ -26,7 +26,6 @@ $padding-right: 19.5px
 
 .guide
   position: relative
-  left: $padding-left
   width: $bar-width
   height: 2px
   background-color: #e1e4e6

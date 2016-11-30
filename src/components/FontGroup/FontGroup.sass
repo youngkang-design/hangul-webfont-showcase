@@ -1,4 +1,5 @@
 @import '../../variables'
+@import '../../mixins'
 
 .title
   font-size: 12px
@@ -6,16 +7,29 @@
   color: $light-gray
   padding-bottom: 8.5px
   border-bottom: 1px solid #e1e4e6
+  +desktop
+    font-size: 14px
+
+.items
+  +desktop
+    display: flex
+    flex-wrap: wrap
+    margin-top: 15px
 
 .item
   margin-top: 18px
   display: flex
   cursor: pointer
+  +desktop
+    margin-top: 30px
+    width: 33.3%
 
 .number
   color: $main-green
   font-size: 10px
   font-weight: bold
+  +desktop
+    font-size: 12px
 
 .fontName
   font-size: 31px

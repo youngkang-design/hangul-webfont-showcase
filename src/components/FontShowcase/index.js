@@ -1,9 +1,12 @@
 import React, {PropTypes} from 'react'
+import classNames from 'classnames'
 
 import data from '../../data.yml'
 import s from './FontShowcase.sass'
 import FontPreview from '../FontPreview'
 import {getFontItem} from '../../utils'
+import SVGCaret from './caret.svg'
+import Footer from '../Footer'
 
 export default class FontShowcase extends React.Component {
   static propTypes = {
@@ -24,8 +27,10 @@ export default class FontShowcase extends React.Component {
 
     return <div className={s.wrap}>
       <div className={s.topNav}>
-        <div className={s.title} onClick={onTitleClicked}>한글 웹폰트 글꼴보기집</div>
-        <div className={s.menuButton}>글꼴 목록</div>
+        <div className={s.topNavResponsive}>
+          <div className={s.title} onClick={onTitleClicked}>한글 웹폰트 글꼴보기집</div>
+          <div className={s.menuButton}>글꼴 목록<SVGCaret className={s.caret} /></div>
+        </div>
       </div>
       <div className={s.content}>
         <div className={s.fontName} style={{fontFamily}}>{fontName}</div>
@@ -36,7 +41,7 @@ export default class FontShowcase extends React.Component {
         <div className={s.linkButton}>라이선스 정보</div>
       </div>
       <div className={s.previewSection}>
-        <div className={s.areaTitle} style={{marginTop: '20px'}}>글꼴 미리보기</div>
+        <div className={classNames(s.areaTitle, s.previewSectionTitle)}>글꼴 미리보기</div>
         {waterfallItems.map(item => {
           const {
             size: fontSize,
@@ -52,12 +57,15 @@ export default class FontShowcase extends React.Component {
             letterSpacing,
             weightSet
           }
-          return <FontPreview key={fontSize} {...props} />
+          return <div key={fontSize} className={s.fontPreviewWrap}>
+            <FontPreview {...props} />
+          </div>
         })}
       </div>
-      <div className={s.rendering}>
-        <div className={s.areaTitle} style={{marginTop: '24px'}}>렌더링 예시</div>
+      <div className={s.renderingImageSection}>
+        <div className={classNames(s.areaTitle, s.renderingImageSectionTitle)}>글꼴 렌더링 미리보기</div>
       </div>
+      <Footer></Footer>
     </div>
   }
 }

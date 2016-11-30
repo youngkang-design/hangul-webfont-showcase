@@ -4,7 +4,7 @@ import React from 'react'
 import TextArea from 'react-textarea-autosize'
 import classNames from 'classnames'
 
-import HorizontalSlider, {paddingRight as horizontalSliderRightPadding} from '../HorizontalSlider'
+import HorizontalSlider from '../HorizontalSlider'
 import s from './FontPreview.sass'
 import SVGFontSize from './font-size.svg'
 import SVGLetterSpacing from './letter-spacing.svg'
@@ -108,7 +108,7 @@ export default class FontPreview extends React.Component {
             <SVGLineHeight className={s.sliderIcon} />
           </HorizontalSlider>
         </div>
-        <div className={classNames(s.menuSection, s.sliderWrap)} style={{marginRight: `-${horizontalSliderRightPadding}px`}}>
+        <div className={classNames(s.menuSection, s.sliderWrap)}>
           <HorizontalSlider min={-0.15} max={1} initialValue={letterSpacing}
             onValueChange={(letterSpacing) => {
               this.setState({letterSpacing})

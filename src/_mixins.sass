@@ -1,18 +1,18 @@
-$breakpoint: 425px
+$breakpoint: 1024px
 
 =desktop
-  @media (min-width: $breakpoint + 1px)
+  @media (min-width: $breakpoint)
     @content
 
 =responsive-container
-  margin-left: auto
-  margin-right: auto
   padding-left: 20px
   padding-right: 20px
   +desktop
-    max-width: 940px
-    padding-left: 10px
-    padding-right: 10px
+    width: 940px
+    margin-left: auto
+    margin-right: auto
+    padding-left: 0
+    padding-right: 0
 
 =appearance-none
   -webkit-appearance: none

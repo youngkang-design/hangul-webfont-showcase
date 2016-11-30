@@ -7,14 +7,16 @@ $area-border: solid 2px #e1e4e6
   user-select: none
 
 .topNav
+  border-bottom: $area-border
+  border-bottom-width: 1px
+
+.topNavResponsive
   +responsive-container
   display: flex
   justify-content: space-between
-  line-height: 18px
-  padding-top: 19px
-  padding-bottom: 19px
-  border-bottom: $area-border
-  border-bottom-width: 1px
+  line-height: 48px
+  +desktop
+    line-height: 88px
 
 .title
   font-size: 18px
@@ -26,6 +28,12 @@ $area-border: solid 2px #e1e4e6
   font-size: 16px
   font-weight: bold
   color: $light-green
+  cursor: pointer
+
+.caret
+  position: relative
+  top: 5px
+  margin-left: 5px
 
 .content
   +responsive-container
@@ -34,18 +42,29 @@ $area-border: solid 2px #e1e4e6
   margin-top: 40px
   font-size: 30px
   color: $main-gray
+  +desktop
+    font-size: 32px
+    margin-top: 63px
 
 .fontDescription
   margin-top: 55px
   font-size: 16px
   line-height: 1.5
+  +desktop
+    font-size: 18px
+    margin-top: 43px
 
 .externalLinks
   +responsive-container
   display: flex
-  justify-content: space-between
-  padding: 30px 20px 70px
+  margin-top: 30px
+  padding-bottom: 70px
   border-bottom: $area-border
+  +desktop
+    border-bottom: none
+    padding-bottom: 58px
+    margin-top: 42px
+    padding-bottom: 58px
 
 .linkButton
   height: 52px
@@ -63,6 +82,11 @@ $area-border: solid 2px #e1e4e6
   transition: background-color .2s
   &:first-of-type
     margin-right: 10px
+  +desktop
+    flex-grow: 0
+    width: 220px
+    &:first-of-type
+      margin-right: 20px
   &:after
     display: inline
     content: '>'
@@ -77,10 +101,32 @@ $area-border: solid 2px #e1e4e6
   color: $light-gray
   font-weight: bold
   font-size: 16px
+  +desktop
+    font-size: 14px
+  .previewSection &
+    margin-top: 20px
+  .renderingImageSection
+    margin-top: 24px
+
 
 .previewSection
   +responsive-container
   overflow: hidden
+  margin-bottom: 57px
 
-.rendering
+.previewSectionTitle
+  margin-bottom: 22px
+  +desktop
+    margin-bottom: 22px
+
+.renderingImageSection
+  +responsive-container
   overflow: hidden
+  margin-bottom: 57px
+  +desktop
+    margin-bottom: 93.5px
+
+.fontPreviewWrap
+  margin-top: 16px
+  +desktop
+    margin-top: 26px

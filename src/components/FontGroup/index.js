@@ -12,7 +12,7 @@ export default class FontGroup extends React.Component {
     } = this.props
     return <div>
       <div className={s.title}>{groupTitle}</div>
-      <div>
+      <div className={s.items}>
         {fontNames.map((name, index) => <div key={index} className={s.item} onClick={() => onFontClicked({groupIndex, itemIndex: index})}>
           <div className={s.number}>{leftpad('0', 2, (index + 1).toString())}</div>
           <div className={s.fontName}>{name}</div>

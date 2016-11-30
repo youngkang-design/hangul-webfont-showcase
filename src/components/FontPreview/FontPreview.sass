@@ -1,6 +1,6 @@
 @import '../../variables'
 @import '../../mixins'
-
+@import '../HorizontalSlider/variables'
 $menu-height: 28px
 
 // text area -> javascript inline style
@@ -19,19 +19,24 @@ $menu-height: 28px
 
 .menuSection
   position: relative
-  &:not(:last-child)::after
+  &:not(:first-child)::after
     display: block
     content: ''
     position: absolute
     top: 0
-    right: 0
+    left: 0
     height: 100%
     width: 1px
     background-color: #eaeeef
+  &:last-child
+    +desktop
+      margin-right: - $padding-right
 
 .alignButtons
   display: flex
-  padding: 0 23.5px
+  padding-left: 23.5px
+  +desktop
+    padding-right: 23.5px
 
 .alignButton
   cursor: pointer
@@ -47,8 +52,10 @@ $menu-height: 28px
     fill: #12b886
 
 .sliderWrap
-  display: flex
+  display: none
   padding-left: 15.5px
+  +desktop
+    display: flex
 
 .weightSelectWrap
   position: relative

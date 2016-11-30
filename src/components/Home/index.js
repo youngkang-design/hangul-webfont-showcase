@@ -1,10 +1,10 @@
-import React from 'react';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
+import React from 'react'
 import classNames from 'classnames'
 
-import s from './Home.sass';
+import s from './Home.sass'
 import FontGroup from '../FontGroup'
 import data from '../../data.yml'
+import Footer from '../Footer'
 
 export default class Home extends React.Component {
   render() {
@@ -20,10 +20,7 @@ export default class Home extends React.Component {
           <FontGroup groupIndex={index} groupTitle={group.title} fontNames={group.items.map(i => i.name)} onFontClicked={onFontClicked}></FontGroup>
         </div>)}
       </div>
-      <div className={s.footer}>
-        <a href="http://youngkang.me">강영화</a> 디자인∙<a href="mailto:seungha.me@gmail.com">김승하</a> 도움 <br/>
-        이 웹페이지의 저작권은 <a href="http://youngkang.me">강영화</a>에게 있습니다.
-      </div>
+      <Footer />
     </div>
   }
 }

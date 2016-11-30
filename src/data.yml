@@ -1,5 +1,5 @@
 # YAML syntax: http://docs.ansible.com/ansible/YAMLSyntax.html
-breakpoint: 425  # mobile / desktop
+breakpoint: 1024  # mobile / desktop
 groups:
   - title: 돋움체∙SANS-SERIF
     items:

@@ -1,0 +1,19 @@
+@import '../../mixins'
+@import '../../variables'
+
+.wrap
+  display: flex
+  align-items: center
+  height: 105px
+  background-color: #292a2b
+  font-size: 14px
+  line-height: 1.57
+  color: $light-gray
+  & a,
+  & a:visited,
+  & a:active,
+  & a:focus
+    color: $light-gray
+
+.responsive
+  +responsive-container
