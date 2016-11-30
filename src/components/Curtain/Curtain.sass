@@ -2,29 +2,25 @@
 
 @keyframes entering
   0%
-    top: 100vh
-    bottom: 0
+    height: 0
+    bottom: -10px
   100%
-    top: 0
+    height: 100vh
     bottom: 0
 
 @keyframes leaving
   0%
     top: 0
-    bottom: 0
-  99%
-    top: 0
-    bottom: 100vh
-    opacity: 1
+    height: 100vh
   100%
-    opacity: 0
+    top: -10px
+    height: 0
 
 .wrap
   position: fixed
   z-index: 200
-  top: 100vh
+  height: 0
   right: 0
-  bottom: 0
   left: 0
   overflow: hidden
   animation-fill-mode: forwards
