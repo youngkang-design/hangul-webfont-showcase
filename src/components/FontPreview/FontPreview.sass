@@ -1,29 +1,84 @@
+@import '../../variables'
 @import '../../mixins'
+
+$menu-height: 28px
 
 // text area -> javascript inline style
 .wrap
   border: 1px solid #eaeeef
   border-radius: 8px
   box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.06)
-  padding: 25px 22px
+  padding: 25px 22px 35px
 
 .menu
   display: flex
+  padding-bottom: 20px
+  height: $menu-height
+  border-bottom: 2px solid #eaeeef
+  margin-bottom: 34px
+
+.menuSection
+  position: relative
+  &:not(:last-child)::after
+    display: block
+    content: ''
+    position: absolute
+    top: 0
+    right: 0
+    height: 100%
+    width: 1px
+    background-color: #eaeeef
 
 .alignButtons
   display: flex
+  padding: 0 23.5px
 
 .alignButton
   cursor: pointer
-  &:hover
-    color: red
+  &:not(:last-child)
+    margin-right: 18px
+  & [fill]
+    fill: #e1e4e6
+  &.alignButtonSelected [fill]
+    fill: #a9afb3
+  &:hover [fill]
+    fill: #96f2d7
+  &:active [fill]
+    fill: #12b886
 
-.sliders
+.sliderWrap
   display: flex
+  padding-left: 15.5px
 
-.slider
-  display: flex
+.weightSelectWrap
+  position: relative
+  flex-grow: 1
 
-.select
+.caret
+  position: absolute
+  top: 0
+  right: 15px
+  display: block
+  line-height: $menu-height
+  content: '>'
+  font-size: 16px
+  color: #e1e4e6
+  font-weight: bold
+  pointer-events: none
+  .weightSelectWrap:hover &
+    color: #63e6be
+
+.weightSelect
   +appearance-none
+  display: block
+  width: 100%
+  height: 100%
   border: none
+  outline: none
+  font-family: inherit
+  font-size: 16px
+  font-weight: bold
+  color: $light-gray
+  cursor: pointer
+  .weightSelectWrap:hover &
+    color: #12b886

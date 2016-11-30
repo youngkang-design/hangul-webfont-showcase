@@ -3,35 +3,44 @@
 $height: 24px
 $bar-width: 128px
 $cursor-size: 12px
+/* NOTE: paddings must be equal to relative values in index.js (paddingLeft, paddingRight)*/
+$padding-left: 14px
+$padding-right: 19.5px
 
 .wrap
   display: flex
+
+.svgIconWrap
+  .wrap:hover & [fill]
+    fill: #12b886
+
+.clickable
+  display: flex
   position: relative
   height: $height
-  width: $bar-width + $cursor-size
-  justify-content: center
+  width: $bar-width + $padding-left + $padding-right
   align-items: center
   cursor: pointer
   overflow: hidden
   user-select: none
 
-.bar
+.guide
+  position: relative
+  left: $padding-left
   width: $bar-width
   height: 2px
   background-color: #e1e4e6
-
-.cursorWrap
-  position: absolute
-  width: $bar-width
-  height: 1px
-  top: 50%
-  left: 0
+  .wrap:hover &
+    background-color: #96f2d7
 
 .cursor
   position: absolute
   top: $cursor-size / -2
+  margin-left: $cursor-size / -2
   box-shadow: 0 0 0 3px #fff
   width: $cursor-size
   height: $cursor-size
-  border-radius: $cursor-size
+  border-radius: $cursor-size / 2
   background-color: $light-gray
+  .wrap:hover &
+    background-color: #12b886
