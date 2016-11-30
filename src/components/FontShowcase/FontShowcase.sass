@@ -80,6 +80,7 @@ $area-border: solid 2px #e1e4e6
   cursor: pointer
   user-select: none
   transition: background-color .2s
+  text-decoration: none
   &:first-of-type
     margin-right: 10px
   +desktop
@@ -104,27 +105,61 @@ $area-border: solid 2px #e1e4e6
   +desktop
     font-size: 14px
   .previewSection &
+    margin-top: 16px
+  .renderedImageSection &
     margin-top: 20px
-  .renderingImageSection
-    margin-top: 24px
 
 
 .previewSection
   +responsive-container
   overflow: hidden
-  margin-bottom: 57px
+  padding-bottom: 80px
+  border-bottom: $area-border
 
 .previewSectionTitle
   margin-bottom: 22px
   +desktop
     margin-bottom: 22px
 
-.renderingImageSection
+.renderedImageSection
   +responsive-container
   overflow: hidden
   margin-bottom: 57px
   +desktop
     margin-bottom: 93.5px
+
+.renderedImageList
+  margin-top: -15px
+  +desktop
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+.renderedImageItem
+  margin-top: 32px
+  +desktop
+    width: 49%
+    margin-top: 35.5px
+
+.deviceName
+  display: inline-block
+  font-size: 14px
+  font-weight: bold
+  line-height: 24px
+  border-radius: 6px
+  background-color: #eaeeef
+  padding: 0 8px
+
+.deviceImage
+  display: block
+  margin-top: 7px
+  box-sizing: border-box
+  border: solid 1px #e1e4e6
+  border-radius: 6px
+  width: 100%
+  height: auto
+  +desktop
+    margin-top: 11px
 
 .fontPreviewWrap
   margin-top: 16px

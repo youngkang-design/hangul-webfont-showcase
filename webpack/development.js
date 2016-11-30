@@ -14,7 +14,7 @@ module.exports = merge.strategy({
   devtool: 'inline-source-map',
   devServer: {
     hot: true,
-    contentBase: resolve(__dirname, '..', 'dist'),
+    contentBase: resolve(__dirname, '..', 'src', 'static'),
     publicPath: '/'
   },
   plugins: [

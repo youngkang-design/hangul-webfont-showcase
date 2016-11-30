@@ -26,8 +26,12 @@ export default class FontShowcase extends React.Component {
       name: fontName,
       desc: fontDescription,
       family: fontFamily,
-      weightSet
+      weightSet,
+      download: downloadLink,
+      license,
+      rendered
     } = getFontItem(data, groupIndex, itemIndex)
+    const renderedImages = rendered || []
     const waterfallItems = mobile ? data.waterfall.items.mobile : data.waterfall.items.desktop
 
     return <div className={s.wrap}>
@@ -42,8 +46,8 @@ export default class FontShowcase extends React.Component {
         <div className={s.fontDescription} style={{fontFamily}}>{fontDescription}</div>
       </div>
       <div className={s.externalLinks}>
-        <div className={s.linkButton}>다운로드 링크</div>
-        <div className={s.linkButton}>라이선스 정보</div>
+        <a target='_blank' className={s.linkButton} href={downloadLink}>다운로드 링크</a>
+        <a target='_blank' className={s.linkButton} href={license}>라이선스 정보</a>
       </div>
       <div className={s.previewSection}>
         <div className={classNames(s.areaTitle, s.previewSectionTitle)}>글꼴 미리보기</div>
@@ -67,8 +71,14 @@ export default class FontShowcase extends React.Component {
           </div>
         })}
       </div>
-      <div className={s.renderingImageSection}>
-        <div className={classNames(s.areaTitle, s.renderingImageSectionTitle)}>글꼴 렌더링 미리보기</div>
+      <div className={s.renderedImageSection}>
+        <div className={classNames(s.areaTitle)}>글꼴 렌더링 미리보기</div>
+        <div className={s.renderedImageList}>
+          {renderedImages.map(({device, file}, index) => <div key={index} className={s.renderedImageItem}>
+            <div className={s.deviceName}>{device}</div>
+            <img className={s.deviceImage} src={`rendered-images/${file}`} />
+          </div>)}
+        </div>
       </div>
       <Footer></Footer>
       <div className={classNames(s.menu, {[s.opening]: menuState === 'opened', [s.closing]: menuState === 'closed'})}>
