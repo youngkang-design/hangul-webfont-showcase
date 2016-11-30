@@ -5,14 +5,13 @@ import {SelectFont} from '../commands'
 import createAction, {
   HomeLeaved,
   FontChanged,
-  CurtainEntering,
-  CurtainLeaving,
   CurtainLoading
 } from '../actions'
+import {enterCurtain, leaveCurtain} from './curtain'
 import data from '../data.yml'
 import {getFontItem} from '../utils'
 
-export default function* fontLoader(document) {
+export default function* (document) {
   yield takeEvery(SelectFont, loadFont, document)
 }
 
@@ -25,15 +24,14 @@ function* loadFont(document, {payload: {groupIndex, itemIndex}}) {
     link.href = url
     document.head.appendChild(link)
   }
-  yield put(createAction(CurtainEntering))
-  yield delay(500)
+  yield enterCurtain()
   yield fork(showLoadingIndicator)
   try {
     yield observer.load('한글', 10000) // FIXME
   } catch(e) {}
   yield put(createAction(FontChanged, {groupIndex, itemIndex}))
   yield put(createAction(HomeLeaved))
-  yield put(createAction(CurtainLeaving))
+  yield leaveCurtain()
 }
 
 function* showLoadingIndicator() {
