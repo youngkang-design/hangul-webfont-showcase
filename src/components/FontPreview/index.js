@@ -21,7 +21,8 @@ export default class FontPreview extends React.Component {
       fontSize,
       lineHeight,
       letterSpacing,
-      selectedWeightIndex
+      selectedWeightIndex,
+      textAlign: 'left'
     }
   }
   render() {
@@ -31,13 +32,13 @@ export default class FontPreview extends React.Component {
       lineHeight,
       letterSpacing,
       selectedWeightIndex,
+      textAlign
     } = this.state
     const {
       weightSet,
       exampleText
     } = this.props
     const {
-      name: weightName,
       weight: fontWeight
     } = weightSet[selectedWeightIndex]
     const style = {
@@ -46,22 +47,31 @@ export default class FontPreview extends React.Component {
       lineHeight,
       letterSpacing,
       fontWeight,
+      textAlign,
       border: 'none',
       outline: 'none',
       resize: 'none',
       width: '100%',
       padding: 0,
-      minHeight: '100px'
+      minHeight: '100px',
+      overflow: 'hidden'
     }
     return <div className={s.wrap}>
-      <select
-        value={selectedWeightIndex}
-        onChange={e => this.setState({selectedWeightIndex: e.target.value})}>
-        {weightSet.map((item, index) => {
-          const weightName = weightSet[index].name
-          return <option key={index} value={index}>{weightName}</option>
-        })}
-      </select>
+      <div className={s.menu}>
+        <select
+          value={selectedWeightIndex}
+          onChange={e => this.setState({selectedWeightIndex: e.target.value})}>
+          {weightSet.map((item, index) => {
+            const weightName = weightSet[index].name
+            return <option key={index} value={index}>{weightName}</option>
+          })}
+        </select>
+        <div className={s.alignButtons}>
+          <div className={s.alignButton} onClick={() => this.setState({textAlign: 'left'})}>L</div>
+          <div className={s.alignButton} onClick={() => this.setState({textAlign: 'center'})}>C</div>
+          <div className={s.alignButton} onClick={() => this.setState({textAlign: 'right'})}>R</div>
+        </div>
+      </div>
       <TextArea
         style={style}
         defaultValue={exampleText} />
