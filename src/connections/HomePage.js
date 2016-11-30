@@ -6,7 +6,7 @@ import createCommand, {SelectFont} from '../commands'
 export default connect(
   null,
   dispatch => ({
-    onFontClicked: ({groupIndex, itemIndex}) => {
+    onFontSelected: ({groupIndex, itemIndex}) => {
       dispatch(createCommand(SelectFont, {groupIndex, itemIndex}))
     }
   })

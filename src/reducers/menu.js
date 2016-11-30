@@ -2,10 +2,12 @@ import {handleActions} from 'redux-actions'
 
 import {
   MenuOpened,
-  MenuClosed
+  MenuClosed,
+  FontChanged
 } from '../actions'
 
 export default handleActions({
-  [MenuOpened]: (s, _) => true,
-  [MenuClosed]: (s, _) => false
-}, false)
+  [MenuOpened]: (s, _) => 'opened',
+  [MenuClosed]: (s, _) => 'closed',
+  [FontChanged]: (s, _) => null,
+}, null)

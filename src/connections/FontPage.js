@@ -1,14 +1,27 @@
 import {connect} from 'react-redux'
 
 import FontShowcase from '../components/FontShowcase'
-import createCommand, {GoHome} from '../commands'
+import createAction, {
+  MenuOpened,
+  MenuClosed
+} from '../actions'
+import createCommand, {
+  SelectFont,
+  GoHome
+} from '../commands'
 
 export default connect(
   ({
     font: {groupIndex, itemIndex},
-    mobile
-  }) => ({groupIndex, itemIndex, mobile}),
+    mobile,
+    menu
+  }) => ({groupIndex, itemIndex, mobile, menuState: menu}),
   dispatch => ({
-    onTitleClicked: () => dispatch(createCommand(GoHome))
+    onMenuOpened: () => dispatch(createAction(MenuOpened)),
+    onMenuClosed: () => dispatch(createAction(MenuClosed)),
+    onTitleClicked: () => dispatch(createCommand(GoHome)),
+    onFontSelected: ({groupIndex, itemIndex}) => {
+      dispatch(createCommand(SelectFont, {groupIndex, itemIndex}))
+    }
   })
 )(FontShowcase)

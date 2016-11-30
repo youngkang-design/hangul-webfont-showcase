@@ -6,8 +6,8 @@ import mobile from './mobile'
 export default function* rootSaga(window) {
   console.log('Hello Sagas!')
   yield [
-    fontLoader(window.document),
-    historySaga(window.history),
+    fontLoader(window, document),
+    historySaga(history),
     home(),
     mobile(window)
   ]

@@ -7,16 +7,21 @@ import FontPreview from '../FontPreview'
 import {getFontItem} from '../../utils'
 import SVGCaret from './caret.svg'
 import Footer from '../Footer'
+import FontSelector from '../FontSelector'
 
 export default class FontShowcase extends React.Component {
   static propTypes = {
     groupIndex: PropTypes.number.isRequired,
     itemIndex: PropTypes.number.isRequired,
     onTitleClicked: PropTypes.func.isRequired,
-    mobile: PropTypes.bool.isRequired
+    onFontSelected: PropTypes.func.isRequired,
+    mobile: PropTypes.bool.isRequired,
+    menuState: PropTypes.string,  // nullable
+    onMenuOpened: PropTypes.func.isRequired,
+    onMenuClosed: PropTypes.func.isRequired
   }
   render() {
-    const {groupIndex, itemIndex, onTitleClicked, mobile} = this.props
+    const {groupIndex, itemIndex, onTitleClicked, mobile, onFontSelected, menuState, onMenuOpened, onMenuClosed} = this.props
     const {
       name: fontName,
       desc: fontDescription,
@@ -29,7 +34,7 @@ export default class FontShowcase extends React.Component {
       <div className={s.topNav}>
         <div className={s.topNavResponsive}>
           <div className={s.title} onClick={onTitleClicked}>한글 웹폰트 글꼴보기집</div>
-          <div className={s.menuButton}>글꼴 목록<SVGCaret className={s.caret} /></div>
+          <div className={s.menuButton} onClick={onMenuOpened}>글꼴 목록<SVGCaret className={s.caret} /></div>
         </div>
       </div>
       <div className={s.content}>
@@ -66,6 +71,18 @@ export default class FontShowcase extends React.Component {
         <div className={classNames(s.areaTitle, s.renderingImageSectionTitle)}>글꼴 렌더링 미리보기</div>
       </div>
       <Footer></Footer>
+      <div className={classNames(s.menu, {[s.opening]: menuState === 'opened', [s.closing]: menuState === 'closed'})}>
+        <div className={s.menuTitleArea}>
+          <div className={s.menuTitle}>한글 웹폰트 글꼴보기집</div>
+          <div className={s.menuCloseButton} onClick={onMenuClosed}>
+            목록 닫기<SVGCaret className={s.caret} style={{transform: 'scaleY(-1)'}} />
+          </div>
+        </div>
+        <div className={s.fontSelectorWrap}>
+          <FontSelector onFontSelected={onFontSelected} asSlideMenu></FontSelector>
+        </div>
+        <div className={s.menuPadding}></div>
+      </div>
     </div>
   }
 }

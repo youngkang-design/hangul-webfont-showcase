@@ -2,13 +2,13 @@ import React from 'react'
 import classNames from 'classnames'
 
 import s from './Home.sass'
-import FontGroup from '../FontGroup'
 import data from '../../data.yml'
 import Footer from '../Footer'
+import FontSelector from '../FontSelector'
 
 export default class Home extends React.Component {
   render() {
-    const {onFontClicked} = this.props
+    const {onFontSelected} = this.props
     return <div className={s.wrap}>
       <div className={s.title}>한글 웹폰트 글꼴보기집</div>
       <div className={s.description}>
@@ -16,9 +16,7 @@ export default class Home extends React.Component {
         <div>한글 웹폰트 글꼴보기집이 다양한 환경에서의 한글 웹 타이포그래피를 다루는 디자이너와 개발자에게 도움이 되길 바랍니다.</div>
       </div>
       <div className={s.menu}>
-        {data.groups.map((group, index) => <div className={s.fontGroup} key={index}>
-          <FontGroup groupIndex={index} groupTitle={group.title} fontNames={group.items.map(i => i.name)} onFontClicked={onFontClicked}></FontGroup>
-        </div>)}
+        <FontSelector onFontSelected={onFontSelected}></FontSelector>
       </div>
       <Footer />
     </div>

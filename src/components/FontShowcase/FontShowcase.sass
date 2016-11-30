@@ -32,7 +32,7 @@ $area-border: solid 2px #e1e4e6
 
 .caret
   position: relative
-  top: 5px
+  top: 6px
   margin-left: 5px
 
 .content
@@ -130,3 +130,38 @@ $area-border: solid 2px #e1e4e6
   margin-top: 16px
   +desktop
     margin-top: 26px
+
+.menu
+  box-sizing: border-box
+  max-height: 0
+  top: -40px
+  width: 100%
+  position: absolute
+  z-index: 100
+  background-color: #e6fcf5
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1)
+  overflow: hidden
+  transition: max-height .5s, top .5s
+
+.menu.opening
+  top: 0
+  max-height: 2000px
+
+.menuTitleArea
+  @extend .topNavResponsive
+
+.menuTitle
+  @extend .title
+
+.menuCloseButton
+  @extend .menuButton
+
+.menuPadding
+  height: 40px
+  +desktop
+    height: 90px
+
+.fontSelectorWrap
+  margin-top: -25px
+  +desktop
+    margin-top: -35px

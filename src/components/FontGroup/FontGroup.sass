@@ -1,6 +1,8 @@
 @import '../../variables'
 @import '../../mixins'
 
+.wrap
+
 .title
   font-size: 12px
   font-weight: bold
@@ -35,3 +37,7 @@
   font-size: 31px
   color: $main-gray
   margin-left: 11px
+  .wrap.asSlideMenu &
+    font-size: 18px
+    +desktop
+      font-size: 31px
