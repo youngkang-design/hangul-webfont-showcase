@@ -176,7 +176,7 @@ groups:
           - name: Black
             weight: 900
       - name: 스포카 한 산스
-        desc: 스포카 한 산스는 한국의 스타트업 스포카에서 만든 오픈 소스 글꼴이다. 2015년 한글날 처음으로 발표했다. 기존 OFL 아래에 있던 본고딕을 커스텀해 Lato의 숫자로 숫자를 교체하고 영문과 특수 문자 일부를 변경했다. 스포카의 비즈니스 특성상 일본어를 잘 대응해야하기에 일본어를 대응하는 스포카 한 산스 JP도 있다.KR, JP 각각 Thin, Regular, Bold 총 3종(JP까지 합하면 총 6종)을 제공한다.
+        desc: 스포카 한 산스는 한국의 스타트업 스포카에서 만든 오픈 소스 글꼴이다. 2015년 한글날 처음으로 발표했다. 기존 OFL 아래에 있던 본고딕을 커스텀해 Lato의 숫자로 숫자를 교체하고 영문과 특수 문자 일부를 변경했다. 스포카의 비즈니스 특성상 일본어를 잘 대응해야하기에 일본어를 대응하는 스포카 한 산스 JP도 있다. KR, JP 각각 Thin, Regular, Bold 총 3종(JP까지 합하면 총 6종)을 제공한다.
         family: Spoqa Han Sans
         url: null
         download: http://spoqa.github.io/spoqa-han-sans/
@@ -469,7 +469,7 @@ waterfall:
         letterSpacing: 0
       - size: 16
         text: 드디어 성이 되었다 싶었는데 파도가 치니 곧 허물어진다. 애써 쌓은 우리의 성은 이제 흔적이 없다. 이 책은 그 모래성을 복원하는 작업이다. 새로 쌓는 모래성이 또 한번의 파도에 자취를 감추기 전에, 우리에게도 단단히 쌓은 모래성이 있었음을 기억하는 일이다.
-        lineHeight: 1.3
+        lineHeight: 1.5
         letterSpacing: 0
     desktop:
       - size: 58
