@@ -15,6 +15,6 @@ export default function* rootSaga(window) {
     historySaga(history),
     home(),
     mobile(window),
-    analytics(window.ga)
+    analytics(window)
   ]
 }
