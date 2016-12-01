@@ -29,7 +29,7 @@ groups:
           - name: Bold
             weight: 700
       - name: 나눔고딕
-        desc: 나눔고딕은 문서의 본문에도 잘 쓸 수 있는 돋움체 글꼴이다. 네이버에서 배포하는 나눔글꼴 중 가장 처음으로 공개했는데,기업용 서체 무료 배포 트렌드에 가장 많은 영향을 준 글꼴이다. Light, Regular, Bold, Extra Bold 총 4종을 제공한다. 글자 끝의 날카로운 부분을 둥글게 처리해 친근하고 부드러운 느낌을 준다. 힌팅 기술을 적용해 어떤 환경에서도 깔끔하게 보이는 것이 특징이다. 나눔고딕은 Mac OS에 기본으로 탑재되어있다.
+        desc: 나눔고딕은 문서의 본문에도 잘 쓸 수 있는 돋움체 글꼴이다. 네이버에서 배포하는 나눔글꼴 중 가장 처음으로 공개했는데,기업용 서체 무료 배포 트렌드에 가장 많은 영향을 준 글꼴이다. Light, Regular, Bold, Extra Bold 총 4종을 제공한다. 글자 끝의 날카로운 부분을 둥글게 처리해 친근하고 부드러운 느낌을 준다. 힌팅 기술을 적용해 어떤 환경에서도 깔끔하게 보이는 것이 특징이다. 나눔고딕은 macOS에 기본으로 탑재되어있다.
         family: NanumGothic
         url: https://cdn.rawgit.com/young-ha/webfont-archive/master/css/NanumGothic.css
         download: http://hangeul.naver.com/2016/nanum
