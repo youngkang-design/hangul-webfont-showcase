@@ -205,7 +205,7 @@ groups:
       - name: 아리따 돋움
         desc: 아리따 글꼴의 ‘아리따’라는 이름은 중국 “시경”의 첫 번째 시인 ‘관저’의 한 구절 ‘아리따운 아가씨-요조숙녀’에서 비록한 것으로, 사랑스럽고 아리따운 여성이라는 의미를 담고있다. 아리따 돋움은 기존의 딱딱하고 남성적인 돋움체에서 벗어나 글자 줄기의 부드러운 곡선이 돋보이는 새로운 표정의 돋움 글꼴이다. 아모레퍼시픽에서 배포, 안그라픽스 타이포그라피 연구소에서 제작했다. Thin, Light, Medium, Semi Bold, Bold 총 5종의 자족을 제공한다.
         family: Arita-dotum
-        url: https://cdn.rawgit.com/young-ha/webfont-archive/master/css/Arita-dotum.css
+        url: https://cdn.rawgit.com/young-ha/webfont-archive/20161201/css/Arita-dotum.css
         download: http://www.amorepacific.com/content/company/ko-kr/group/cibi/typeface-arita.html
         license: http://www.amorepacific.com/content/company/ko-kr/group/cibi/typeface-arita.html
         rendered:
