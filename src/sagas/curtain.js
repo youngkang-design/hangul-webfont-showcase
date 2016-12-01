@@ -11,6 +11,7 @@ export function* enterCurtain() {
 }
 
 export function* leaveCurtain() {
+  yield delay(30)
   yield put(createAction(CurtainLeaving))
   yield delay(800)
 }
