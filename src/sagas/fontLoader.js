@@ -3,7 +3,6 @@ import {put, race, fork, cancel, call} from 'redux-saga/effects'
 import FontFaceObserver from 'fontfaceobserver'
 import {SelectFont} from '../commands'
 import createAction, {
-  HomeLeaved,
   FontChanged,
   CurtainLoading
 } from '../actions'
@@ -30,7 +29,6 @@ function* loadFont(window, document, {payload: {groupIndex, itemIndex}}) {
     yield observer.load('한글', 10000) // FIXME
   } catch(e) {}
   yield put(createAction(FontChanged, {groupIndex, itemIndex}))
-  yield put(createAction(HomeLeaved))
   yield call([window, window.scrollTo], 0, 0)
   yield leaveCurtain()
 }

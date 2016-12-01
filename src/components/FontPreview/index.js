@@ -18,7 +18,6 @@ export default class FontPreview extends React.Component {
     super(props)
     // const {fontSize, lineHeight, letterSpacing, exampleText} = props
     const {
-      fontFamily,
       fontSize,
       lineHeight,
       letterSpacing,
@@ -26,7 +25,6 @@ export default class FontPreview extends React.Component {
     } = props
     const selectedWeightIndex = Math.max(0, weightSet.findIndex(item => item.default))
     this.state = {
-      fontFamily,
       fontSize,
       lineHeight,
       letterSpacing,
@@ -36,7 +34,6 @@ export default class FontPreview extends React.Component {
   }
   render() {
     const {
-      fontFamily,
       fontSize,
       lineHeight,
       letterSpacing,
@@ -44,6 +41,7 @@ export default class FontPreview extends React.Component {
       textAlign
     } = this.state
     const {
+      fontFamily,
       weightSet,
       exampleText
     } = this.props

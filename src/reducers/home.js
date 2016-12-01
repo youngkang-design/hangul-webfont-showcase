@@ -2,10 +2,10 @@ import {handleActions} from 'redux-actions'
 
 import {
   HomeArrived,
-  HomeLeaved
+  FontChanged
 } from '../actions'
 
 export default handleActions({
   [HomeArrived]: (s, _) => true,
-  [HomeLeaved]: (s, _) => false
+  [FontChanged]: (s, _) => false
 }, true)

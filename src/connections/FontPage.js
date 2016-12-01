@@ -1,3 +1,4 @@
+import React from 'react'
 import {connect} from 'react-redux'
 
 import FontShowcase from '../components/FontShowcase'
@@ -24,4 +25,4 @@ export default connect(
       dispatch(createCommand(SelectFont, {groupIndex, itemIndex}))
     }
   })
-)(FontShowcase)
+)(props => <FontShowcase key={`${props.groupIndex}-${props.itemIndex}`} {...props}/>)
