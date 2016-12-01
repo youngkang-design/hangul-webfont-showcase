@@ -64,12 +64,12 @@ $menu-height: 28px
 
 .caret
   position: absolute
-  top: 0
-  right: 15px
+  top: -1px
+  right: 20px
   display: block
   line-height: $menu-height
   content: '>'
-  font-size: 16px
+  font-size: 20px
   color: #e1e4e6
   font-weight: bold
   pointer-events: none
@@ -86,10 +86,13 @@ $menu-height: 28px
   outline: none
   font-family: inherit
   font-size: 16px
+  text-transform: uppercase
   font-weight: bold
   color: $light-gray
   cursor: pointer
   background-color: white
+  line-height: 20px
+  padding-bottom: 4px
   transition: color, 0.2s
   .weightSelectWrap:hover &
     color: #12b886

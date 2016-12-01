@@ -1,7 +1,7 @@
 @import '../../variables'
 @import '../../mixins'
 
-$area-border: solid 2px #e1e4e6
+$area-border: solid 1px #e1e4e6
 
 .wrap
   user-select: none
@@ -14,7 +14,7 @@ $area-border: solid 2px #e1e4e6
   +responsive-container
   display: flex
   justify-content: space-between
-  line-height: 48px
+  line-height: 67px
   +desktop
     line-height: 88px
 
@@ -47,9 +47,9 @@ $area-border: solid 2px #e1e4e6
     margin-top: 63px
 
 .fontDescription
-  margin-top: 55px
+  margin-top: 36px
   font-size: 16px
-  line-height: 1.5
+  line-height: 1.7
   +desktop
     font-size: 18px
     margin-top: 43px
@@ -64,14 +64,17 @@ $area-border: solid 2px #e1e4e6
     border-bottom: none
     padding-bottom: 58px
     margin-top: 42px
-    padding-bottom: 58px
+    padding-bottom: 74px
 
 .linkButton
+  +desktop
+    height: 60px
+    line-height: 58px
   height: 52px
   line-height: 50px
   border: solid 1px #63e6be
   box-sizing: border-box
-  border-radius: 6px
+  border-radius: 4px
   color: $light-green
   font-weight: bold
   font-size: 16px
@@ -105,9 +108,11 @@ $area-border: solid 2px #e1e4e6
   +desktop
     font-size: 14px
   .previewSection &
-    margin-top: 16px
+    margin-top: 40px
+    +desktop
+      margin-top: 16px
   .renderedImageSection &
-    margin-top: 20px
+    margin-top: 40px
 
 
 .previewSection
@@ -115,6 +120,9 @@ $area-border: solid 2px #e1e4e6
   overflow: hidden
   padding-bottom: 80px
   border-bottom: $area-border
+  +desktop
+    padding-bottom: 94px
+    border-bottom: none
 
 .previewSectionTitle
   margin-bottom: 22px
@@ -139,7 +147,7 @@ $area-border: solid 2px #e1e4e6
   margin-top: 32px
   +desktop
     width: 49%
-    margin-top: 35.5px
+    margin-top: 58px
 
 .deviceName
   display: inline-block
@@ -155,7 +163,7 @@ $area-border: solid 2px #e1e4e6
   margin-top: 7px
   box-sizing: border-box
   border: solid 1px #e1e4e6
-  border-radius: 6px
+  border-radius: 4px
   width: 100%
   height: auto
   +desktop
