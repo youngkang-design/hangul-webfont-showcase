@@ -3,7 +3,6 @@ import classNames from 'classnames'
 
 import s from './Home.sass'
 import data from '../../data.yml'
-import Footer from '../Footer'
 import FontSelector from '../FontSelector'
 
 export default class Home extends React.Component {
@@ -18,7 +17,6 @@ export default class Home extends React.Component {
       <div className={s.menu}>
         <FontSelector onFontSelected={onFontSelected}></FontSelector>
       </div>
-      <Footer />
     </div>
   }
 }
