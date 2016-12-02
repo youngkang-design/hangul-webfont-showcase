@@ -5,6 +5,7 @@ import {Provider} from 'react-redux'
 
 import s from './global.sass'
 import MainNavigation from './connections/MainNavigation'
+import Footer from './components/Footer'
 import Curtain from './connections/Curtain'
 import store from './store'
 
@@ -15,6 +16,7 @@ const render = () => {
         <div className={s.wrap}>
           <MainNavigation/>
           <Curtain/>
+          <Footer/>
         </div>
       </Provider>
     </AppContainer>,

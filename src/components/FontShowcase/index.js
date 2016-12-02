@@ -6,7 +6,6 @@ import s from './FontShowcase.sass'
 import FontPreview from '../FontPreview'
 import {getFontItem} from '../../utils'
 import SVGCaret from './caret.svg'
-import Footer from '../Footer'
 import FontSelector from '../FontSelector'
 
 export default class FontShowcase extends React.Component {
@@ -80,7 +79,6 @@ export default class FontShowcase extends React.Component {
           </div>)}
         </div>
       </div>
-      <Footer></Footer>
       <div className={classNames(s.menu, {[s.opening]: menuState === 'opened', [s.closing]: menuState === 'closed'})}>
         <div className={s.menuTitleArea}>
           <div className={s.menuTitle}>한글 웹폰트 글꼴보기집</div>
