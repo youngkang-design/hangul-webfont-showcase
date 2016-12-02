@@ -69,6 +69,9 @@ export default class FontShowcase extends React.Component {
             <FontPreview {...props} />
           </div>
         })}
+        <div className={s.ReferenceLink}>
+          <a href="http://www.aladin.co.kr/shop/wproduct.aspx?ItemId=94013969" target="_blank">우리에게도 계보가 있다 - 외롭지 않은 페미니즘(2016)</a>
+        </div>
       </div>
       <div className={s.renderedImageSection}>
         <div className={classNames(s.areaTitle)}>글꼴 렌더링 미리보기</div>
