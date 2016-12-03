@@ -6,6 +6,13 @@ export function leftpad(padString, length, target) {
   }
 }
 
-export function getFontItem(fontData, groupIndex, itemIndex) {
-  return fontData.groups[groupIndex].items[itemIndex]
+export function getFontItem(fontData, fontFamily) {
+  for (let group of fontData.groups) {
+    for (let item of group.items) {
+      if (item.family === fontFamily) {
+        return item
+      }
+    }
+  }
+  throw "no matched font"
 }

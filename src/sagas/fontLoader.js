@@ -14,8 +14,8 @@ export default function* (window) {
   yield takeEvery(SelectFont, loadFont, window, document)
 }
 
-function* loadFont(window, document, {payload: {groupIndex, itemIndex}}) {
-  const {url, family} = getFontItem(data, groupIndex, itemIndex)
+function* loadFont(window, document, {payload: family}) {
+  const {url} = getFontItem(data, family)
   const observer = new FontFaceObserver(family)
   if (url && !isFontLoaded(document, url)) {
     const link = yield call([document, document.createElement], 'link')
@@ -28,7 +28,7 @@ function* loadFont(window, document, {payload: {groupIndex, itemIndex}}) {
   try {
     yield observer.load('한글', 10000) // FIXME
   } catch(e) {}
-  yield put(createAction(FontChanged, {groupIndex, itemIndex}))
+  yield put(createAction(FontChanged, family))
   yield call([window, window.scrollTo], 0, 0)
   yield leaveCurtain()
 }

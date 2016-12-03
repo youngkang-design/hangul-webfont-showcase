@@ -10,33 +10,29 @@ import FontSelector from '../FontSelector'
 
 export default class FontShowcase extends React.Component {
   static propTypes = {
-    groupIndex: PropTypes.number.isRequired,
-    itemIndex: PropTypes.number.isRequired,
-    onTitleClicked: PropTypes.func.isRequired,
-    onFontSelected: PropTypes.func.isRequired,
     mobile: PropTypes.bool.isRequired,
     menuState: PropTypes.string,  // nullable
+    fontFamily: PropTypes.string.isRequired,
     onMenuOpened: PropTypes.func.isRequired,
     onMenuClosed: PropTypes.func.isRequired
   }
   render() {
-    const {groupIndex, itemIndex, onTitleClicked, mobile, onFontSelected, menuState, onMenuOpened, onMenuClosed} = this.props
+    const {fontFamily, mobile, menuState, onMenuOpened, onMenuClosed} = this.props
     const {
       name: fontName,
       desc: fontDescription,
-      family: fontFamily,
       weightSet,
       download: downloadLink,
       license,
       rendered
-    } = getFontItem(data, groupIndex, itemIndex)
+    } = getFontItem(data, fontFamily)
     const renderedImages = rendered || []
     const waterfallItems = mobile ? data.waterfall.items.mobile : data.waterfall.items.desktop
 
     return <div className={s.wrap}>
       <div className={s.topNav}>
         <div className={s.topNavResponsive}>
-          <div className={s.title} onClick={onTitleClicked}>한글 웹폰트 글꼴보기집</div>
+          <a href="#/" className={s.title}>한글 웹폰트 글꼴보기집</a>
           <div className={s.menuButton} onClick={onMenuOpened}>글꼴 목록<SVGCaret className={s.caret} /></div>
         </div>
       </div>
@@ -90,7 +86,7 @@ export default class FontShowcase extends React.Component {
           </div>
         </div>
         <div className={s.fontSelectorWrap}>
-          <FontSelector onFontSelected={onFontSelected} asSlideMenu></FontSelector>
+          <FontSelector asSlideMenu></FontSelector>
         </div>
         <div className={s.menuPadding}></div>
       </div>

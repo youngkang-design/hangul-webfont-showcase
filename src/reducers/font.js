@@ -5,12 +5,5 @@ import {
 } from '../actions'
 
 export default handleActions({
-  [FontChanged]: (s, {payload}) => {
-    if (payload === null) {
-      return null
-    } else {
-      const {groupIndex, itemIndex} = payload
-      return {groupIndex, itemIndex}
-    }
-  }
+  [FontChanged]: (s, {payload}) => payload // font family
 }, null)

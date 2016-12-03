@@ -6,23 +6,15 @@ import createAction, {
   MenuOpened,
   MenuClosed
 } from '../actions'
-import createCommand, {
-  SelectFont,
-  GoHome
-} from '../commands'
 
 export default connect(
   ({
-    font: {groupIndex, itemIndex},
+    font,
     mobile,
     menu
-  }) => ({groupIndex, itemIndex, mobile, menuState: menu}),
+  }) => ({fontFamily: font, mobile, menuState: menu}),
   dispatch => ({
     onMenuOpened: () => dispatch(createAction(MenuOpened)),
-    onMenuClosed: () => dispatch(createAction(MenuClosed)),
-    onTitleClicked: () => dispatch(createCommand(GoHome)),
-    onFontSelected: ({groupIndex, itemIndex}) => {
-      dispatch(createCommand(SelectFont, {groupIndex, itemIndex}))
-    }
+    onMenuClosed: () => dispatch(createAction(MenuClosed))
   })
-)(props => <FontShowcase key={`${props.groupIndex}-${props.itemIndex}`} {...props}/>)
+)(props => <FontShowcase key={props.fontFamily} {...props}/>)

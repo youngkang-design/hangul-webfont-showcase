@@ -14,8 +14,7 @@ function* production(window) {
   yield call(window.ga, 'create', 'UA-43289302-5', 'auto');
   yield call(window.ga, 'send', 'pageview');
   while (true) {
-    const {payload: {groupIndex, itemIndex}} = yield take(SelectFont)
-    const {family} = getFontItem(data, groupIndex, itemIndex)
+    const {payload: family} = yield take(SelectFont)
     yield call(window.ga, 'send', 'event', 'SelectFont', family)
   }
 }

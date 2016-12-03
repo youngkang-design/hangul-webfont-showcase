@@ -8,18 +8,16 @@ export default class FontGroup extends React.Component {
   render() {
     const {
       groupTitle,
-      fontNames,
-      groupIndex,
-      onFontSelected,
+      items,
       asSlideMenu
     } = this.props
     return <div className={classNames(s.wrap, {[s.asSlideMenu]: asSlideMenu})}>
       <div className={s.title}>{groupTitle}</div>
       <div className={s.items}>
-        {fontNames.map((name, index) => <div key={index} className={s.item} onClick={() => onFontSelected({groupIndex, itemIndex: index})}>
+        {items.map((item, index) => <a key={item.name} className={s.item} href={`#/fonts/${item.family}`}>
           <div className={s.number}>{leftpad('0', 2, (index + 1).toString())}</div>
-          <div className={s.fontName}>{name}</div>
-        </div>)}
+          <div className={s.fontName}>{item.name}</div>
+        </a>)}
       </div>
     </div>
   }

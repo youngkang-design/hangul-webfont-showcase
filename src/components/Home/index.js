@@ -7,7 +7,6 @@ import FontSelector from '../FontSelector'
 
 export default class Home extends React.Component {
   render() {
-    const {onFontSelected} = this.props
     return <div className={s.wrap}>
       <div className={s.title}>한글 웹폰트 글꼴보기집</div>
       <div className={s.description}>
@@ -16,7 +15,7 @@ export default class Home extends React.Component {
         <div className={s.notice}>이 페이지에 수록된 모든 글꼴이 무료로 공개되어있지만, 원저작자의 라이선스 가이드를 지켜 사용하길 권장합니다. <br />원저작자의 라이선스 가이드를 어길 경우 법적 책임은 사용한 사람에게 있음을 명시합니다.</div>
       </div>
       <div className={s.menu}>
-        <FontSelector onFontSelected={onFontSelected}></FontSelector>
+        <FontSelector></FontSelector>
       </div>
     </div>
   }

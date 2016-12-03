@@ -12,7 +12,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 export default function* rootSaga(window) {
   yield [
     fontLoader(window, document),
-    historySaga(history),
+    historySaga(window),
     home(),
     mobile(window),
     analytics(window)
