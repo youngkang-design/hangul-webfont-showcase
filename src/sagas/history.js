@@ -32,7 +32,7 @@ function* router(hash) {
 }
 
 function getHashFromUrl(url) {
-  return url.split('#')[1] || ''
+  return decodeURI(url).split('#')[1] || ''
 }
 
 function hashChangeChannel(window) {
