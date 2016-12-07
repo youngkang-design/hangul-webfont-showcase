@@ -259,8 +259,8 @@ groups:
         desc: 푸른전남체는 전라남도 전용서체로 전라남도청에서 배포한 글꼴이다. 명확한 정보 전달, 지속 가능한 활용 등 폭넓은 사용성에 중점을 둔 글꼴이다. ‘ㅅ’, ‘ㅈ’ 등 꺾이는 획의 삐침에 쭉 뻗어나가는 느낌을 주었다. 획 마무리의 특징이 영문에도 동일하게 적용되어 리듬감도 느껴진다. Regular, Bold 총 2종을 제공한다.
         family: PureunJeonnam
         url: https://cdn.rawgit.com/young-ha/webfont-archive/master/css/PureunJeonnam.css
-        download: https://www.kywa.or.kr/about/about08.jsp
-        license: https://www.kywa.or.kr/about/about08.jsp
+        download: http://www.jeonnam.go.kr/contentsView.do?menuId=jeonnam0603080000
+        license: http://www.jeonnam.go.kr/contentsView.do?menuId=jeonnam0603080000
         rendered:
           - device: iOS - Safari
             file: PureunJeonnam/iOS-safari.png
@@ -418,8 +418,8 @@ groups:
         desc: 한겨레결체는 한겨레신문에서 쓰는 글꼴을 무료 배포한 바탕체 글꼴이다. 태시스템에 의뢰해 만든 글꼴이다. 한국의 신문 글꼴 가운데 처음으로 채택된 탈네모꼴 글꼴이라는 특징을 가진다. 또한 한국의 신문사 중 가장 처음으로 사용하던 글꼴을 배포했다. 자족은 Regular 총 1종이다.
         family: Hankyoreh
         url: https://cdn.rawgit.com/young-ha/webfont-archive/master/css/Hankyoreh.css
-        download: http://www.amorepacific.com/content/company/ko-kr/group/cibi/typeface-arita.html
-        license: http://www.amorepacific.com/content/company/ko-kr/group/cibi/typeface-arita.html
+        download: http://nuri.hani.co.kr/hanisite/dev/board/listbody.html?h_gcode=board&h_code=91&po_no=11411
+        license: http://nuri.hani.co.kr/hanisite/dev/board/listbody.html?h_gcode=board&h_code=91&po_no=11411
         rendered:
           - device: iOS - Safari
             file: Hankyoreh/iOS-safari.png
