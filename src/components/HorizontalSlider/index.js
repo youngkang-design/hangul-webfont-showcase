@@ -21,7 +21,7 @@ export default class HorizontalSlider extends React.Component {
   ratioToValue = ratio => this.props.min + (this.props.max - this.props.min) * ratio
   valueToRatio = value => (value - this.props.min) / (this.props.max - this.props.min)
   handleDragging = e => {
-    const target = e.currentTarget
+    const target = this.sliderEl
     const style = window.getComputedStyle(target)
     const paddingLeft = parseInt(style.getPropertyValue('padding-left'))
     const paddingRight = parseInt(style.getPropertyValue('padding-right'))
@@ -40,14 +40,21 @@ export default class HorizontalSlider extends React.Component {
   cancelDragging = () => this.setState({
     dragging: false
   })
-  onMouseDown = e => this.handleDragging(e)
-  onMouseMove = e => {
-    if (this.state.dragging) {
-      this.handleDragging(e)
+  onMouseDown = e => {
+    const onMouseUp = e => {
+      this.cancelDragging()
+      document.removeEventListener('mouseup', onMouseUp)
+      document.removeEventListener('mousemove', onMouseMove)
     }
+    const onMouseMove = e => {
+      if (this.state.dragging) {
+        this.handleDragging(e)
+      }
+    }
+    document.addEventListener('mousemove', onMouseMove)
+    document.addEventListener('mouseup', onMouseUp)
+    this.handleDragging(e)
   }
-  onMouseUp = () => this.cancelDragging()
-  onMouseLeave = () => this.cancelDragging()
   render() {
     const {children} = this.props
     const {value} = this.state
@@ -57,9 +64,7 @@ export default class HorizontalSlider extends React.Component {
       </div>
       <div className={s.clickable}
         onMouseDown={this.onMouseDown}
-        onMouseMove={this.onMouseMove}
-        onMouseUp={this.onMouseUp}
-        onMouseLeave={this.onMouseLeave}
+        ref={sliderEl => {this.sliderEl = sliderEl}}
         >
         <div className={s.guide}>
           <div className={s.cursor} style={{left: `${this.valueToRatio(value)* 100}%`}}></div>
