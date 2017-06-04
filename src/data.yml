@@ -6,7 +6,7 @@ groups:
       - name: 고도체
         desc: 고도체는 엔에이치엔고도와 윤디자인 연구소가 협력하여 만든 글꼴이다. Medium, Bold 총 2종으로 구성되어 있다. 꺾임과 맺음 등에 깎인 듯한 곡선형태가 들어가 있는 것이 특징이다. 깎인 듯한 곡선의 형태는 영문, 숫자, 특수문자에도 동일하게 적용되어있다. 긴 글일 때 쓰면 적합하지만 제목과 소제목용에도 적절히 어울린다.
         family: Godo
-        url: https://cdn.rawgit.com/young-ha/webfont-archive/master/css/Godo.css
+        url: //cdn.rawgit.com/young-ha/webfont-archive/master/css/Godo.css
         download: http://www.godo.co.kr/company/godofont.php
         license: http://www.godo.co.kr/company/godofont.php
         rendered:
@@ -21,7 +21,7 @@ groups:
           - device: Windows - Edge
             file: Godo/win_edge.png
           - device: Windows - Chrome
-            file: Godo/win_chrome.png  
+            file: Godo/win_chrome.png
         weightSet:
           - name: Medium
             weight: 500
@@ -31,7 +31,7 @@ groups:
       - name: 나눔고딕
         desc: 나눔고딕은 문서의 본문에도 잘 쓸 수 있는 돋움체 글꼴이다. 네이버에서 배포하는 나눔글꼴 중 가장 처음으로 공개했는데,기업용 서체 무료 배포 트렌드에 가장 많은 영향을 준 글꼴이다. Light, Regular, Bold, Extra Bold 총 4종을 제공한다. 글자 끝의 날카로운 부분을 둥글게 처리해 친근하고 부드러운 느낌을 준다. 힌팅 기술을 적용해 어떤 환경에서도 깔끔하게 보이는 것이 특징이다. 나눔고딕은 macOS에 기본으로 탑재되어있다.
         family: NanumGothic
-        url: https://cdn.rawgit.com/young-ha/webfont-archive/master/css/NanumGothic.css
+        url: //cdn.rawgit.com/young-ha/webfont-archive/master/css/NanumGothic.css
         download: http://hangeul.naver.com/2016/nanum
         license: https://help.naver.com/support/contents/contents.nhn?serviceNo=1074&categoryNo=3497
         rendered:
@@ -46,7 +46,7 @@ groups:
           - device: Windows - Edge
             file: NanumGothic/win_edge.png
           - device: Windows - Chrome
-            file: NanumGothic/win_chrome.png 
+            file: NanumGothic/win_chrome.png
         weightSet:
           - name: Medium
             weight: 500
@@ -58,7 +58,7 @@ groups:
       - name: 나눔바른고딕
         desc: 나눔바른고딕은 작은 화면에서도 또렷하고 깔끔하게 보이는 돋움 글꼴을 컨셉으로 제작되었다. 네이버에서 배포하고 있으며 폰트릭스에서 제작했다. 기존의 인쇄용 글꼴들은 작은 화면에서 지글지글해 보이거나 흐릭하게 보이기도 한다. 나눔 바른고딕은 모바일에서 사용하기에 무리가 없도록 글꼴의 용량을 줄이고, 한눈에 읽기 좋게 글자 두께도 두껍게 했다. 글자 사이 간격도 좁은 편이다. UltraLight, Light, Regular, Bold 총 4종을 제공한다.
         family: NanumBarunGothic
-        url: https://cdn.rawgit.com/young-ha/webfont-archive/master/css/NanumBarunGothic.css
+        url: //cdn.rawgit.com/young-ha/webfont-archive/master/css/NanumBarunGothic.css
         download: http://hangeul.naver.com/2016/nanum
         license: https://help.naver.com/support/contents/contents.nhn?serviceNo=1074&categoryNo=3497
         rendered:
@@ -73,7 +73,7 @@ groups:
           - device: Windows - Edge
             file: NanumBarunGothic/win_edge.png
           - device: Windows - Chrome
-            file: NanumBarunGothic/win_chrome.png 
+            file: NanumBarunGothic/win_chrome.png
         weightSet:
           - name: UltraLight
             weight: 200
@@ -87,7 +87,7 @@ groups:
       - name: 나눔스퀘어
         desc: 나눔스퀘어는 네이버에서 가장 최근에 공개한 나눔글꼴이다. 산돌커뮤니케이션에서 제작했다. 네이버의 서비스 로고타입에 활용하기 용이한 제목체 형태로 개발되었다. 뚜렷한 직선을 특징이다. 다양한 스크린 화면에서 제목체의 용도로 명시성과 판독성이 최적화된 글자폭과 글자 사이를 찾았으며 획이 많거나 복잡한 자소의 속공간을 확보하여 작은 화면에서도 인지하기 쉬운 형태를 지닌다. Light, Regular, Bold, Extra Bold의 총 4종을 지원한다.
         family: NanumSquare
-        url: https://cdn.rawgit.com/young-ha/webfont-archive/master/css/NanumSquare.css
+        url: //cdn.rawgit.com/young-ha/webfont-archive/master/css/NanumSquare.css
         download: http://hangeul.naver.com/2016/nanum
         license: https://help.naver.com/support/contents/contents.nhn?serviceNo=1074&categoryNo=3497
         rendered:
@@ -102,7 +102,7 @@ groups:
           - device: Windows - Edge
             file: NanumSquare/win_edge.png
           - device: Windows - Chrome
-            file: NanumSquare/win_chrome.png 
+            file: NanumSquare/win_chrome.png
         weightSet:
           - name: Light
             weight: 300
@@ -116,7 +116,7 @@ groups:
       - name: 바른돋움체
         desc: 바른돋움체는 2009년도부터 정부의 지원을 받아 개발한 글꼴이다. 바른바탕체와 짝을 이룬다. 누구나 자유롭게 사용할 수 있도록 개발되었으며 대한인쇄문화협회에서 배포하고 있다. 설치 가이드에는 가변폭이 적용이 되어 눈에 부담을 주지 않는 글꼴이라는 설명이 있다. 바른돋움1, 바른돋움2, 바른돋움3으로 총 3종의 자족을 구분했으며 각각 Light, Medium, Bold로 볼 수 있겠다.
         family: BareunDotum
-        url: https://cdn.rawgit.com/young-ha/webfont-archive/master/css/BareunDotum.css
+        url: //cdn.rawgit.com/young-ha/webfont-archive/master/css/BareunDotum.css
         download: http://www.print.or.kr/bbs/board.php?bo_table=B52
         license: http://www.print.or.kr/bbs/board.php?bo_table=B52
         rendered:
@@ -131,7 +131,7 @@ groups:
           - device: Windows - Edge
             file: BareunDotum/win_edge.png
           - device: Windows - Chrome
-            file: BareunDotum/win_chrome.png 
+            file: BareunDotum/win_chrome.png
         weightSet:
           - name: Light
             weight: 300
@@ -143,7 +143,7 @@ groups:
       - name: 본고딕
         desc: 본고딕은 Noto Sans CJK KR 혹은 Source Han Sans로도 부른다. 어도비, 구글이 합동으로 3년동안 작업한 대형 프로젝트로서 다양한 언어의 문자를 대응하려고 했다. 한국에서는 산돌커뮤니케이션이 작업했다. ‘ㅊ’과 ‘ㅎ’의 머리 삐침획이 일반적인 가로형이 아닌 세로형이라는 특징이 있다. 구글에서 개발한 만큼 안드로이드 휴대폰 OS에는 기본으로 탑재되어있다. Thin, DemiLight, Regular, Medium, Bold, Black 총 7종을 제공한다.
         family: NotoSansCJKkr
-        url: https://cdn.rawgit.com/young-ha/webfont-archive/master/css/NotoSansCJKkr.css
+        url: //cdn.rawgit.com/young-ha/webfont-archive/master/css/NotoSansCJKkr.css
         download: https://www.google.com/get/noto/#sans-kore
         license: https://www.google.com/get/noto
         rendered:
@@ -158,7 +158,7 @@ groups:
           - device: Windows - Edge
             file: NotoSansCJKkr/win_edge.png
           - device: Windows - Chrome
-            file: NotoSansCJKkr/win_chrome.png 
+            file: NotoSansCJKkr/win_chrome.png
         weightSet:
           - name: Thin
             weight: 100
@@ -178,7 +178,7 @@ groups:
       - name: 스포카 한 산스
         desc: 스포카 한 산스는 한국의 스타트업 스포카에서 만든 오픈 소스 글꼴이다. 2015년 한글날 처음으로 발표했다. 기존 OFL 아래에 있던 본고딕을 커스텀해 Lato의 숫자로 숫자를 교체하고 영문과 특수 문자 일부를 변경했다. 스포카의 비즈니스 특성상 일본어를 잘 대응해야하기에 일본어를 대응하는 스포카 한 산스 JP도 있다. KR, JP 각각 Thin, Regular, Bold 총 3종(JP까지 합하면 총 6종)을 제공한다.
         family: Spoqa Han Sans
-        url: null
+        url: //spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css
         download: http://spoqa.github.io/spoqa-han-sans/
         license: http://spoqa.github.io/spoqa-han-sans/
         rendered:
@@ -193,7 +193,7 @@ groups:
           - device: Windows - Edge
             file: SpoqaHanSans/win_edge.png
           - device: Windows - Chrome
-            file: SpoqaHanSans/win_chrome.png 
+            file: SpoqaHanSans/win_chrome.png
         weightSet:
           - name: Thin
             weight: 100
@@ -205,7 +205,7 @@ groups:
       - name: 아리따 돋움
         desc: 아리따 글꼴의 ‘아리따’라는 이름은 중국 “시경”의 첫 번째 시인 ‘관저’의 한 구절 ‘아리따운 아가씨-요조숙녀’에서 비록한 것으로, 사랑스럽고 아리따운 여성이라는 의미를 담고있다. 아리따 돋움은 기존의 딱딱하고 남성적인 돋움체에서 벗어나 글자 줄기의 부드러운 곡선이 돋보이는 새로운 표정의 돋움 글꼴이다. 아모레퍼시픽에서 배포, 안그라픽스 타이포그라피 연구소에서 제작했다. Thin, Light, Medium, Semi Bold, Bold 총 5종의 자족을 제공한다.
         family: Arita-dotum
-        url: https://cdn.rawgit.com/young-ha/webfont-archive/20161201/css/Arita-dotum.css
+        url: //cdn.rawgit.com/young-ha/webfont-archive/20161201/css/Arita-dotum.css
         download: http://www.amorepacific.com/content/company/ko-kr/group/cibi/typeface-arita.html
         license: http://www.amorepacific.com/content/company/ko-kr/group/cibi/typeface-arita.html
         rendered:
@@ -220,7 +220,7 @@ groups:
           - device: Windows - Edge
             file: Arita-Dotum/win_edge.png
           - device: Windows - Chrome
-            file: Arita-Dotum/win_chrome.png 
+            file: Arita-Dotum/win_chrome.png
         weightSet:
           - name: Thin
             weight: 100
@@ -236,7 +236,7 @@ groups:
       - name: 청소년체
         desc: 청소년체는 여성가족부와 한국청소년활동진흥원에서 배포한 글꼴이다. 모던한 형태의 고딕체를 기본으로 안정적이고 밝은 느낌을 더해서 청소년 특유의 밝고 진취적인 이미지를 리듬감 있게 형상화했다. 모던한 구조로 이루어진 돋움체로서 글줄이 상단에 위치하여 안정적이고 밝은 느낌으로 제작되었다. 자족은 Regular 총 1종이다.
         family: Youth
-        url: https://cdn.rawgit.com/young-ha/webfont-archive/master/css/Youth.css
+        url: //cdn.rawgit.com/young-ha/webfont-archive/master/css/Youth.css
         download: https://www.kywa.or.kr/about/about08.jsp
         license: https://www.kywa.or.kr/about/about08.jsp
         rendered:
@@ -251,14 +251,14 @@ groups:
           - device: Windows - Edge
             file: Youth/win_edge.png
           - device: Windows - Chrome
-            file: Youth/win_chrome.png 
+            file: Youth/win_chrome.png
         weightSet:
           - name: Regular
             weight: 400
       - name: 푸른전남체
         desc: 푸른전남체는 전라남도 전용서체로 전라남도청에서 배포한 글꼴이다. 명확한 정보 전달, 지속 가능한 활용 등 폭넓은 사용성에 중점을 둔 글꼴이다. ‘ㅅ’, ‘ㅈ’ 등 꺾이는 획의 삐침에 쭉 뻗어나가는 느낌을 주었다. 획 마무리의 특징이 영문에도 동일하게 적용되어 리듬감도 느껴진다. Regular, Bold 총 2종을 제공한다.
         family: PureunJeonnam
-        url: https://cdn.rawgit.com/young-ha/webfont-archive/master/css/PureunJeonnam.css
+        url: //cdn.rawgit.com/young-ha/webfont-archive/master/css/PureunJeonnam.css
         download: http://www.jeonnam.go.kr/contentsView.do?menuId=jeonnam0603080000
         license: http://www.jeonnam.go.kr/contentsView.do?menuId=jeonnam0603080000
         rendered:
@@ -273,7 +273,7 @@ groups:
           - device: Windows - Edge
             file: PureunJeonnam/win_edge.png
           - device: Windows - Chrome
-            file: PureunJeonnam/win_chrome.png 
+            file: PureunJeonnam/win_chrome.png
         weightSet:
           - name: Medium
             weight: 500
@@ -282,7 +282,7 @@ groups:
       - name: 함초롬돋움
         desc: 함초롬돋움은 한글과컴퓨터가 배포한 글꼴이다. 함초롬바탕과 짝을 이룬다. 옛한글을 응용한 형태로 획이 많은 글자를 표현할 때 통일감을 주었다. 직사각형 형태의 긴 글자체로 변화를 주어 한 줄당 들어가는 글자수가 기존보다 늘어났다. 힌팅 기술을 적용해 모니터 화면에서도 가독성을 높였고 글자를 확대해도 미려하게 표현되는 것이 특징이다. Regular, Bold 총 2종이다.
         family: HANDotum
-        url: https://cdn.rawgit.com/young-ha/webfont-archive/master/css/HANDotum.css
+        url: //cdn.rawgit.com/young-ha/webfont-archive/master/css/HANDotum.css
         download: http://www.hancom.com/cs_center/csDownload.do
         license: http://www.hancom.com/cs_center/csDownload.do
         rendered:
@@ -297,7 +297,7 @@ groups:
           - device: Windows - Edge
             file: HANDotum/win_edge.png
           - device: Windows - Chrome
-            file: HANDotum/win_chrome.png 
+            file: HANDotum/win_chrome.png
         weightSet:
           - name: Medium
             weight: 500
@@ -308,7 +308,7 @@ groups:
       - name: 나눔명조
         desc: 나눔명조는 네이버에서 나눔글꼴로 공개한 두 번째 글꼴이다. 폰트릭스에서 제작했다. 바탕체의 가장 큰 특징인 붓의 필력. 이 붓의 필력은 남아있지만, 제도한 느낌이 들도록 줄기 끝 부분을 칼로 자르듯 과감히 잘라내어, 명쾌하고 현대적인 표정을 가진 글꼴이다. 본문용으로 기획되었으나 제목용으로도 많이 쓰인다. 기존의 다른 바탕체와는 달리 표현이 명쾌하여 힘차고 강한 느낌을 주기 때문이다. Regular, Bold, Extra Bold 총 3종을 제공한다.
         family: NanumMyeongjo
-        url: https://cdn.rawgit.com/young-ha/webfont-archive/master/css/NanumMyeongjo.css
+        url: //cdn.rawgit.com/young-ha/webfont-archive/master/css/NanumMyeongjo.css
         download: http://hangeul.naver.com/2016/nanum
         license: https://help.naver.com/support/contents/contents.nhn?serviceNo=1074&categoryNo=3497
         rendered:
@@ -323,7 +323,7 @@ groups:
           - device: Windows - Edge
             file: NanumMyeongjo/win_edge.png
           - device: Windows - Chrome
-            file: NanumMyeongjo/win_chrome.png 
+            file: NanumMyeongjo/win_chrome.png
         weightSet:
           - name: Medium
             weight: 500
@@ -334,7 +334,7 @@ groups:
       - name: 바른바탕체
         desc: 바른바탕체는 2009년도부터 정부의 지원을 받아 개발한 글꼴이다. 바른돋움체와 짝을 이룬다.  누구나 자유롭게 사용할 수 있도록 개발되었으며 대한인쇄문화협회에서 배포하고 있다. 설치 가이드에는 가변폭이 적용이 되어 눈에 부담을 주지 않는 글꼴이라는 설명이 있다. Light, Medium, Bold의 총 3종을 제공한다.
         family: BareunBatang
-        url: https://cdn.rawgit.com/young-ha/webfont-archive/master/css/BareunBatang.css
+        url: //cdn.rawgit.com/young-ha/webfont-archive/master/css/BareunBatang.css
         download: http://www.print.or.kr/bbs/board.php?bo_table=B52
         license: http://www.print.or.kr/bbs/board.php?bo_table=B52
         rendered:
@@ -349,7 +349,7 @@ groups:
           - device: Windows - Edge
             file: BareunBatang/win_edge.png
           - device: Windows - Chrome
-            file: BareunBatang/win_chrome.png 
+            file: BareunBatang/win_chrome.png
         weightSet:
           - name: Light
             weight: 300
@@ -361,7 +361,7 @@ groups:
       - name: 수화명조
         desc: 수화명조는 정수화 폰트연구소에서 개발한 바탕체 글꼴이다. (주) 디자인정글에서 배포하고 있다. 110, 140 총 2종을 제공한다.
         family: SHMyungjo
-        url: https://cdn.rawgit.com/young-ha/webfont-archive/master/css/SHMyungjo.css
+        url: //cdn.rawgit.com/young-ha/webfont-archive/master/css/SHMyungjo.css
         download: http://font.jungle.co.kr/
         license: http://font.jungle.co.kr/
         rendered:
@@ -376,7 +376,7 @@ groups:
           - device: Windows - Edge
             file: SHMyungjo/win_edge.png
           - device: Windows - Chrome
-            file: SHMyungjo/win_chrome.png 
+            file: SHMyungjo/win_chrome.png
         weightSet:
           - name: Thin
             weight: 100
@@ -386,7 +386,7 @@ groups:
       - name: 아리따 부리
         desc: 아리따 글꼴의 ‘아리따’라는 이름은 중국 “시경”의 첫 번째 시인 ‘관저’의 한 구절 ‘아리따운 아가씨-요조숙녀’에서 비록한 것으로, 사랑스럽고 아리따운 여성이라는 의미를 담고있다. 아리따 부리는 아리따 돋움과 닮은 남매 글자로, 긴 호흡의 문장에 적합한 완성도 높은 본문용 글꼴이다. 기존 명조체의 표정에 현대적인 미감을 더했다. 아모레퍼시픽에서 배포, 안그라픽스 타이포그라피 연구소에서 제작했다. Hairline, Light, Medium, Semi Bold, Bold 총 5종의 자족을 제공한다.
         family: Arita-buri
-        url: https://cdn.rawgit.com/young-ha/webfont-archive/master/css/Arita-buri.css
+        url: //cdn.rawgit.com/young-ha/webfont-archive/master/css/Arita-buri.css
         download: http://www.amorepacific.com/content/company/ko-kr/group/cibi/typeface-arita.html
         license: http://www.amorepacific.com/content/company/ko-kr/group/cibi/typeface-arita.html
         rendered:
@@ -401,7 +401,7 @@ groups:
           - device: Windows - Edge
             file: Arita-Buri/win_edge.png
           - device: Windows - Chrome
-            file: Arita-Buri/win_chrome.png 
+            file: Arita-Buri/win_chrome.png
         weightSet:
           - name: Thin
             weight: 100
@@ -417,7 +417,7 @@ groups:
       - name: 한겨레결체
         desc: 한겨레결체는 한겨레신문에서 쓰는 글꼴을 무료 배포한 바탕체 글꼴이다. 태시스템에 의뢰해 만든 글꼴이다. 한국의 신문 글꼴 가운데 처음으로 채택된 탈네모꼴 글꼴이라는 특징을 가진다. 또한 한국의 신문사 중 가장 처음으로 사용하던 글꼴을 배포했다. 자족은 Regular 총 1종이다.
         family: Hankyoreh
-        url: https://cdn.rawgit.com/young-ha/webfont-archive/master/css/Hankyoreh.css
+        url: //cdn.rawgit.com/young-ha/webfont-archive/master/css/Hankyoreh.css
         download: http://nuri.hani.co.kr/hanisite/dev/board/listbody.html?h_gcode=board&h_code=91&po_no=11411
         license: http://nuri.hani.co.kr/hanisite/dev/board/listbody.html?h_gcode=board&h_code=91&po_no=11411
         rendered:
@@ -432,14 +432,14 @@ groups:
           - device: Windows - Edge
             file: Hankyoreh/win_edge.png
           - device: Windows - Chrome
-            file: Hankyoreh/win_chrome.png 
+            file: Hankyoreh/win_chrome.png
         weightSet:
           - name: Medium
             weight: 500
       - name: 함초롬바탕
         desc: 함초롬바탕은 한글과컴퓨터가 배포한 글꼴이다. 함초롬돋움과 짝을 이룬다. 옛한글을 응용한 형태로 획이 많은 글자를 표현할 때 통일감을 주었다. 직사각형 형태의 긴 글자체로 변화를 주어 한 줄당 들어가는 글자수가 기존보다 늘어났다. 힌팅 기술을 적용해 모니터 화면에서도 가독성을 높였고 글자를 확대해도 미려하게 표현되는 것이 특징이다. Regular, Bold 총 2종이다.
         family: HANBatang
-        url: https://cdn.rawgit.com/young-ha/webfont-archive/master/css/HANBatang.css
+        url: //cdn.rawgit.com/young-ha/webfont-archive/master/css/HANBatang.css
         download: http://www.hancom.com/cs_center/csDownload.do
         license: http://www.hancom.com/cs_center/csDownload.do
         rendered:
@@ -454,7 +454,7 @@ groups:
           - device: Windows - Edge
             file: HANBatang/win_edge.png
           - device: Windows - Chrome
-            file: HANBatang/win_chrome.png 
+            file: HANBatang/win_chrome.png
         weightSet:
           - name: Medium
             weight: 500
