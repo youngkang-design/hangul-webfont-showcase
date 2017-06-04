@@ -22,7 +22,8 @@ const hljsStyle = {
     'fontFamily': `'Fira Code', monospace`,
     'whiteSpace': 'pre-wrap',
     'fontSize': '15px',
-    'lineHeight': '1.8'
+    'lineHeight': '1.8',
+    'overflowWrap': 'break-word'
   },
   'hljs-keyword': {
     'color': '#747a7e'
