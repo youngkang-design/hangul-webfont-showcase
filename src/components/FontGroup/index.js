@@ -16,7 +16,7 @@ export default class FontGroup extends React.Component {
       <div className={s.items}>
         {items.map((item, index) => <a key={item.name} className={s.item} href={encodeURI(`#/fonts/${item.family}`)}>
           <div className={s.number}>{leftpad('0', 2, (index + 1).toString())}</div>
-          <div className={s.fontName}>{item.name}</div>
+          <div className={s.fontName} style={{fontFamily: `${item.family}-name`}}>{item.name}</div>
         </a>)}
       </div>
     </div>
