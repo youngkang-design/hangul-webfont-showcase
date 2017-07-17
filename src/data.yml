@@ -10,17 +10,23 @@ groups:
         download: http://www.godo.co.kr/company/godofont.php
         license: http://www.godo.co.kr/company/godofont.php
         rendered:
-          - device: iOS - Safari
+          - os: iOS
+            device: Safari
             file: Godo/iOS-safari.png
-          - device: Android - Chrome
+          - os: Android
+            device: Chrome
             file: Godo/android.png
-          - device: Mac OS - Chrome
+          - os: Mac OS
+            device: Chrome
             file: Godo/mac_chrome.png
-          - device: Mac OS - Firefox
+          - os: Mac OS
+            device: Firefox
             file: Godo/mac_firefox.png
-          - device: Windows - Edge
+          - os: Windows
+            device: Edge
             file: Godo/win_edge.png
-          - device: Windows - Chrome
+          - os: Windows
+            device: Chrome
             file: Godo/win_chrome.png
         weightSet:
           - name: Medium
@@ -35,17 +41,23 @@ groups:
         download: http://hangeul.naver.com/2016/nanum
         license: https://help.naver.com/support/contents/contents.nhn?serviceNo=1074&categoryNo=3497
         rendered:
-          - device: iOS - Safari
+          - os: iOS
+            device: Safari
             file: NanumGothic/iOS-safari.png
-          - device: Android - Chrome
+          - os: Android
+            device: Chrome
             file: NanumGothic/android.png
-          - device: Mac OS - Chrome
+          - os: Mac OS
+            device: Chrome
             file: NanumGothic/mac_chrome.png
-          - device: Mac OS - Firefox
+          - os: Mac OS
+            device: Firefox
             file: NanumGothic/mac_firefox.png
-          - device: Windows - Edge
+          - os: Windows
+            device: Edge
             file: NanumGothic/win_edge.png
-          - device: Windows - Chrome
+          - os: Windows
+            device: Chrome
             file: NanumGothic/win_chrome.png
         weightSet:
           - name: Medium
@@ -62,17 +74,23 @@ groups:
         download: http://hangeul.naver.com/2016/nanum
         license: https://help.naver.com/support/contents/contents.nhn?serviceNo=1074&categoryNo=3497
         rendered:
-          - device: iOS - Safari
+          - os: iOS
+            device: Safari
             file: NanumBarunGothic/iOS-safari.png
-          - device: Android - Chrome
+          - os: Android
+            device: Chrome
             file: NanumBarunGothic/android.png
-          - device: Mac OS - Chrome
+          - os: Mac OS
+            device: Chrome
             file: NanumBarunGothic/mac_chrome.png
-          - device: Mac OS - Firefox
+          - os: Mac OS
+            device: Firefox
             file: NanumBarunGothic/mac_firefox.png
-          - device: Windows - Edge
+          - os: Windows
+            device: Edge
             file: NanumBarunGothic/win_edge.png
-          - device: Windows - Chrome
+          - os: Windows
+            device: Chrome
             file: NanumBarunGothic/win_chrome.png
         weightSet:
           - name: UltraLight
@@ -91,17 +109,23 @@ groups:
         download: http://hangeul.naver.com/2016/nanum
         license: https://help.naver.com/support/contents/contents.nhn?serviceNo=1074&categoryNo=3497
         rendered:
-          - device: iOS - Safari
+          - os: iOS
+            device: Safari
             file: NanumSquare/iOS-safari.png
-          - device: Android - Chrome
+          - os: Android
+            device: Chrome
             file: NanumSquare/android.png
-          - device: Mac OS - Chrome
+          - os: Mac OS
+            device: Chrome
             file: NanumSquare/mac_chrome.png
-          - device: Mac OS - Firefox
+          - os: Mac OS
+            device: Firefox
             file: NanumSquare/mac_firefox.png
-          - device: Windows - Edge
+          - os: Windows
+            device: Edge
             file: NanumSquare/win_edge.png
-          - device: Windows - Chrome
+          - os: Windows
+            device: Chrome
             file: NanumSquare/win_chrome.png
         weightSet:
           - name: Light
@@ -120,17 +144,23 @@ groups:
         download: http://www.print.or.kr/bbs/board.php?bo_table=B52
         license: http://www.print.or.kr/bbs/board.php?bo_table=B52
         rendered:
-          - device: iOS - Safari
+          - os: iOS
+            device: Safari
             file: BareunDotum/iOS-safari.png
-          - device: Android - Chrome
+          - os: Android
+            device: Chrome
             file: BareunDotum/android.png
-          - device: Mac OS - Chrome
+          - os: Mac OS
+            device: Chrome
             file: BareunDotum/mac_chrome.png
-          - device: Mac OS - Firefox
+          - os: Mac OS
+            device: Firefox
             file: BareunDotum/mac_firefox.png
-          - device: Windows - Edge
+          - os: Windows
+            device: Edge
             file: BareunDotum/win_edge.png
-          - device: Windows - Chrome
+          - os: Windows
+            device: Chrome
             file: BareunDotum/win_chrome.png
         weightSet:
           - name: Light
@@ -147,17 +177,23 @@ groups:
         download: https://www.google.com/get/noto/#sans-kore
         license: https://www.google.com/get/noto
         rendered:
-          - device: iOS - Safari
+          - os: iOS
+            device: Safari
             file: NotoSansCJKkr/iOS-safari.png
-          - device: Android - Chrome
+          - os: Android
+            device: Chrome
             file: NotoSansCJKkr/android.png
-          - device: Mac OS - Chrome
+          - os: Mac OS
+            device: Chrome
             file: NotoSansCJKkr/mac_chrome.png
-          - device: Mac OS - Firefox
+          - os: Mac OS
+            device: Firefox
             file: NotoSansCJKkr/mac_firefox.png
-          - device: Windows - Edge
+          - os: Windows
+            device: Edge
             file: NotoSansCJKkr/win_edge.png
-          - device: Windows - Chrome
+          - os: Windows
+            device: Chrome
             file: NotoSansCJKkr/win_chrome.png
         weightSet:
           - name: Thin
@@ -182,17 +218,23 @@ groups:
         download: http://spoqa.github.io/spoqa-han-sans/
         license: http://spoqa.github.io/spoqa-han-sans/
         rendered:
-          - device: iOS - Safari
+          - os: iOS
+            device: Safari
             file: SpoqaHanSans/iOS-safari.png
-          - device: Android - Chrome
+          - os: Android
+            device: Chrome
             file: SpoqaHanSans/android.png
-          - device: Mac OS - Chrome
+          - os: Mac OS
+            device: Chrome
             file: SpoqaHanSans/mac_chrome.png
-          - device: Mac OS - Firefox
+          - os: Mac OS
+            device: Firefox
             file: SpoqaHanSans/mac_firefox.png
-          - device: Windows - Edge
+          - os: Windows
+            device: Edge
             file: SpoqaHanSans/win_edge.png
-          - device: Windows - Chrome
+          - os: Windows
+            device: Chrome
             file: SpoqaHanSans/win_chrome.png
         weightSet:
           - name: Thin
@@ -209,17 +251,23 @@ groups:
         download: http://www.amorepacific.com/content/company/ko-kr/group/cibi/typeface-arita.html
         license: http://www.amorepacific.com/content/company/ko-kr/group/cibi/typeface-arita.html
         rendered:
-          - device: iOS - Safari
+          - os: iOS
+            device: Safari
             file: Arita-Dotum/iOS-safari.png
-          - device: Android - Chrome
+          - os: Android
+            device: Chrome
             file: Arita-Dotum/android.png
-          - device: Mac OS - Chrome
+          - os: Mac OS
+            device: Chrome
             file: Arita-Dotum/mac_chrome.png
-          - device: Mac OS - Firefox
+          - os: Mac OS
+            device: Firefox
             file: Arita-Dotum/mac_firefox.png
-          - device: Windows - Edge
+          - os: Windows
+            device: Edge
             file: Arita-Dotum/win_edge.png
-          - device: Windows - Chrome
+          - os: Windows
+            device: Chrome
             file: Arita-Dotum/win_chrome.png
         weightSet:
           - name: Thin
@@ -240,17 +288,23 @@ groups:
         download: https://www.kywa.or.kr/about/about08.jsp
         license: https://www.kywa.or.kr/about/about08.jsp
         rendered:
-          - device: iOS - Safari
+          - os: iOS
+            device: Safari
             file: Youth/iOS-safari.png
-          - device: Android - Chrome
+          - os: Android
+            device: Chrome
             file: Youth/android.png
-          - device: Mac OS - Chrome
+          - os: Mac OS
+            device: Chrome
             file: Youth/mac_chrome.png
-          - device: Mac OS - Firefox
+          - os: Mac OS
+            device: Firefox
             file: Youth/mac_firefox.png
-          - device: Windows - Edge
+          - os: Windows
+            device: Edge
             file: Youth/win_edge.png
-          - device: Windows - Chrome
+          - os: Windows
+            device: Chrome
             file: Youth/win_chrome.png
         weightSet:
           - name: Regular
@@ -262,17 +316,23 @@ groups:
         download: http://www.jeonnam.go.kr/contentsView.do?menuId=jeonnam0603080000
         license: http://www.jeonnam.go.kr/contentsView.do?menuId=jeonnam0603080000
         rendered:
-          - device: iOS - Safari
+          - os: iOS
+            device: Safari
             file: PureunJeonnam/iOS-safari.png
-          - device: Android - Chrome
+          - os: Android
+            device: Chrome
             file: PureunJeonnam/android.png
-          - device: Mac OS - Chrome
+          - os: Mac OS
+            device: Chrome
             file: PureunJeonnam/mac_chrome.png
-          - device: Mac OS - Firefox
+          - os: Mac OS
+            device: Firefox
             file: PureunJeonnam/mac_firefox.png
-          - device: Windows - Edge
+          - os: Windows
+            device: Edge
             file: PureunJeonnam/win_edge.png
-          - device: Windows - Chrome
+          - os: Windows
+            device: Chrome
             file: PureunJeonnam/win_chrome.png
         weightSet:
           - name: Medium
@@ -286,17 +346,23 @@ groups:
         download: http://www.hancom.com/cs_center/csDownload.do
         license: http://www.hancom.com/cs_center/csDownload.do
         rendered:
-          - device: iOS - Safari
+          - os: iOS
+            device: Safari
             file: HANDotum/iOS-safari.png
-          - device: Android - Chrome
+          - os: Android
+            device: Chrome
             file: HANDotum/android.png
-          - device: Mac OS - Chrome
+          - os: Mac OS
+            device: Chrome
             file: HANDotum/mac_chrome.png
-          - device: Mac OS - Firefox
+          - os: Mac OS
+            device: Firefox
             file: HANDotum/mac_firefox.png
-          - device: Windows - Edge
+          - os: Windows
+            device: Edge
             file: HANDotum/win_edge.png
-          - device: Windows - Chrome
+          - os: Windows
+            device: Chrome
             file: HANDotum/win_chrome.png
         weightSet:
           - name: Medium
@@ -312,17 +378,23 @@ groups:
         download: http://hangeul.naver.com/2016/nanum
         license: https://help.naver.com/support/contents/contents.nhn?serviceNo=1074&categoryNo=3497
         rendered:
-          - device: iOS - Safari
+          - os: iOS
+            device: Safari
             file: NanumMyeongjo/iOS-safari.png
-          - device: Android - Chrome
+          - os: Android
+            device: Chrome
             file: NanumMyeongjo/android.png
-          - device: Mac OS - Chrome
+          - os: Mac OS
+            device: Chrome
             file: NanumMyeongjo/mac_chrome.png
-          - device: Mac OS - Firefox
+          - os: Mac OS
+            device: Firefox
             file: NanumMyeongjo/mac_firefox.png
-          - device: Windows - Edge
+          - os: Windows
+            device: Edge
             file: NanumMyeongjo/win_edge.png
-          - device: Windows - Chrome
+          - os: Windows
+            device: Chrome
             file: NanumMyeongjo/win_chrome.png
         weightSet:
           - name: Medium
@@ -338,17 +410,23 @@ groups:
         download: http://www.print.or.kr/bbs/board.php?bo_table=B52
         license: http://www.print.or.kr/bbs/board.php?bo_table=B52
         rendered:
-          - device: iOS - Safari
+          - os: iOS
+            device: Safari
             file: BareunBatang/iOS-safari.png
-          - device: Android - Chrome
+          - os: Android
+            device: Chrome
             file: BareunBatang/android.png
-          - device: Mac OS - Chrome
+          - os: Mac OS
+            device: Chrome
             file: BareunBatang/mac_chrome.png
-          - device: Mac OS - Firefox
+          - os: Mac OS
+            device: Firefox
             file: BareunBatang/mac_firefox.png
-          - device: Windows - Edge
+          - os: Windows
+            device: Edge
             file: BareunBatang/win_edge.png
-          - device: Windows - Chrome
+          - os: Windows
+            device: Chrome
             file: BareunBatang/win_chrome.png
         weightSet:
           - name: Light
@@ -365,17 +443,23 @@ groups:
         download: http://font.jungle.co.kr/
         license: http://font.jungle.co.kr/
         rendered:
-          - device: iOS - Safari
+          - os: iOS
+            device: Safari
             file: SHMyungjo/iOS-safari.png
-          - device: Android - Chrome
+          - os: Android
+            device: Chrome
             file: SHMyungjo/android.png
-          - device: Mac OS - Chrome
+          - os: Mac OS
+            device: Chrome
             file: SHMyungjo/mac_chrome.png
-          - device: Mac OS - Firefox
+          - os: Mac OS
+            device: Firefox
             file: SHMyungjo/mac_firefox.png
-          - device: Windows - Edge
+          - os: Windows
+            device: Edge
             file: SHMyungjo/win_edge.png
-          - device: Windows - Chrome
+          - os: Windows
+            device: Chrome
             file: SHMyungjo/win_chrome.png
         weightSet:
           - name: Thin
@@ -390,17 +474,23 @@ groups:
         download: http://www.amorepacific.com/content/company/ko-kr/group/cibi/typeface-arita.html
         license: http://www.amorepacific.com/content/company/ko-kr/group/cibi/typeface-arita.html
         rendered:
-          - device: iOS - Safari
+          - os: iOS
+            device: Safari
             file: Arita-Buri/iOS-safari.png
-          - device: Android - Chrome
+          - os: Android
+            device: Chrome
             file: Arita-Buri/android.png
-          - device: Mac OS - Chrome
+          - os: Mac OS
+            device: Chrome
             file: Arita-Buri/mac_chrome.png
-          - device: Mac OS - Firefox
+          - os: Mac OS
+            device: Firefox
             file: Arita-Buri/mac_firefox.png
-          - device: Windows - Edge
+          - os: Windows
+            device: Edge
             file: Arita-Buri/win_edge.png
-          - device: Windows - Chrome
+          - os: Windows
+            device: Chrome
             file: Arita-Buri/win_chrome.png
         weightSet:
           - name: Thin
@@ -421,17 +511,23 @@ groups:
         download: http://nuri.hani.co.kr/hanisite/dev/board/listbody.html?h_gcode=board&h_code=91&po_no=11411
         license: http://nuri.hani.co.kr/hanisite/dev/board/listbody.html?h_gcode=board&h_code=91&po_no=11411
         rendered:
-          - device: iOS - Safari
+          - os: iOS
+            device: Safari
             file: Hankyoreh/iOS-safari.png
-          - device: Android - Chrome
+          - os: Android
+            device: Chrome
             file: Hankyoreh/android.png
-          - device: Mac OS - Chrome
+          - os: Mac OS
+            device: Chrome
             file: Hankyoreh/mac_chrome.png
-          - device: Mac OS - Firefox
+          - os: Mac OS
+            device: Firefox
             file: Hankyoreh/mac_firefox.png
-          - device: Windows - Edge
+          - os: Windows
+            device: Edge
             file: Hankyoreh/win_edge.png
-          - device: Windows - Chrome
+          - os: Windows
+            device: Chrome
             file: Hankyoreh/win_chrome.png
         weightSet:
           - name: Medium
@@ -443,17 +539,23 @@ groups:
         download: http://www.hancom.com/cs_center/csDownload.do
         license: http://www.hancom.com/cs_center/csDownload.do
         rendered:
-          - device: iOS - Safari
+          - os: iOS
+            device: Safari
             file: HANBatang/iOS-safari.png
-          - device: Android - Chrome
+          - os: Android
+            device: Chrome
             file: HANBatang/android.png
-          - device: Mac OS - Chrome
+          - os: Mac OS
+            device: Chrome
             file: HANBatang/mac_chrome.png
-          - device: Mac OS - Firefox
+          - os: Mac OS
+            device: Firefox
             file: HANBatang/mac_firefox.png
-          - device: Windows - Edge
+          - os: Windows
+            device: Edge
             file: HANBatang/win_edge.png
-          - device: Windows - Chrome
+          - os: Windows
+            device: Chrome
             file: HANBatang/win_chrome.png
         weightSet:
           - name: Medium

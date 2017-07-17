@@ -109,8 +109,11 @@ export default class FontShowcase extends React.Component {
       <div className={s.renderedImageSection}>
         <div className={classNames(s.areaTitle)}>글꼴 렌더링 미리보기</div>
         <div className={s.renderedImageList}>
-          {renderedImages.map(({device, file}, index) => <div key={index} className={s.renderedImageItem}>
-            <div className={s.deviceName}>{device}</div>
+          {renderedImages.map(({os, device, file}, index) => <div key={index} className={s.renderedImageItem}>
+            <div className={s.description}>
+              <span className={s.deviceName}>{device}</span>
+              <span className={s.osName}>{os}</span>
+            </div>
             <img className={s.deviceImage} src={`rendered-images/${file}`} />
           </div>)}
         </div>
