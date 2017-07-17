@@ -35,14 +35,14 @@ export default class FontPreview extends React.Component {
     }
   }
   changeWeightIndex(selectedWeightIndex) {
-    this.setState({selectedWeightIndex, loading: true})
+    this.setState({loading: true})
     const weight = selectedWeightIndex
     new FontFaceObserver(this.props.fontFamily, {
       weight: this.props.weightSet[selectedWeightIndex].weight
     }).load('한글', 20000).then(() => {
+      this.setState({selectedWeightIndex, loading: false})
+    }).catch(() => {
       this.setState({loading: false})
-      setTimeout(function() {
-      }.bind(this))
     })
   }
   render() {
