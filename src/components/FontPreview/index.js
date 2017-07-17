@@ -3,6 +3,7 @@
 import React from 'react'
 import TextArea from 'react-textarea-autosize'
 import classNames from 'classnames'
+import FontFaceObserver from 'fontfaceobserver'
 
 import HorizontalSlider from '../HorizontalSlider'
 import s from './FontPreview.sass'
@@ -12,6 +13,7 @@ import SVGLineHeight from './line-height.svg'
 import SVGAlignLeft from './align-left.svg'
 import SVGAlignCenter from './align-center.svg'
 import SVGAlignRight from './align-right.svg'
+import FontLoadingIndicator from './FontLoadingIndicator'
 
 export default class FontPreview extends React.Component {
   constructor(props) {
@@ -32,18 +34,31 @@ export default class FontPreview extends React.Component {
       textAlign: 'left'
     }
   }
+  changeWeightIndex(selectedWeightIndex) {
+    this.setState({selectedWeightIndex, loading: true})
+    const weight = selectedWeightIndex
+    new FontFaceObserver(this.props.fontFamily, {
+      weight: this.props.weightSet[selectedWeightIndex].weight
+    }).load('한글', 20000).then(() => {
+      this.setState({loading: false})
+      setTimeout(function() {
+      }.bind(this))
+    })
+  }
   render() {
     const {
       fontSize,
       lineHeight,
       letterSpacing,
       selectedWeightIndex,
-      textAlign
+      textAlign,
+      loading
     } = this.state
     const {
       fontFamily,
       weightSet,
-      exampleText
+      exampleText,
+      index
     } = this.props
     const {
       weight: fontWeight
@@ -61,7 +76,8 @@ export default class FontPreview extends React.Component {
       width: '100%',
       padding: 0,
       minHeight: '100px',
-      overflow: 'hidden'
+      overflow: 'hidden',
+      visibility: loading ? 'hidden' : 'visible'
     }
     return <div className={s.wrap}>
       <div className={s.menu}>
@@ -69,7 +85,7 @@ export default class FontPreview extends React.Component {
           <select
             className={s.weightSelect}
             value={selectedWeightIndex}
-            onChange={e => this.setState({selectedWeightIndex: e.target.value})}>
+            onChange={e => this.changeWeightIndex(e.target.value)}>
             {weightSet.map((item, index) => {
               const weightName = weightSet[index].name
               return <option key={index} value={index}>{weightName}</option>
@@ -116,10 +132,15 @@ export default class FontPreview extends React.Component {
           </HorizontalSlider>
         </div>
       </div>
-      <TextArea
+      <div className={s.contentWrap}>
+        <TextArea
         style={style}
         defaultValue={exampleText}
         ref={el => this.textArea = el} />
+        <div className={s.loadingIndicatorWrap} style={{display: (loading ? 'block' : 'none')}}>
+          <FontLoadingIndicator small={index > 0}></FontLoadingIndicator>
+        </div>
+      </div>
     </div>
   }
 }

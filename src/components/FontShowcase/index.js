@@ -83,7 +83,7 @@ export default class FontShowcase extends React.Component {
       </div>
       <div className={s.previewSection}>
         <div className={classNames(s.areaTitle, s.previewSectionTitle)}>글꼴 미리보기</div>
-        {waterfallItems.map(item => {
+        {waterfallItems.map((item, index) => {
           const {
             size: fontSize,
             text: exampleText,
@@ -96,7 +96,8 @@ export default class FontShowcase extends React.Component {
             exampleText,
             lineHeight,
             letterSpacing,
-            weightSet
+            weightSet,
+            index
           }
           return <div key={fontSize} className={s.fontPreviewWrap}>
             <FontPreview {...props} />

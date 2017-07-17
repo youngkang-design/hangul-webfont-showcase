@@ -1,0 +1,77 @@
+@import '../../mixins'
+
+.wrap
+  & > div
+    position: relative
+    width: 100%
+    background-color: #f6f7f9
+    overflow: hidden
+    &:before
+      height: 100%
+      display: block
+      content: ''
+      background-image: linear-gradient(to right, #f6f7f9 0%, #e9ebee 20%, #f6f7f9 40%, #f6f7f9 100%)
+      background-repeat: no-repeat
+      animation-duration: 1s
+      animation-fill-mode: forwards
+      animation-iteration-count: infinite
+      animation-name: shimmer
+      animation-timing-function: linear
+    &:after
+      position: absolute
+      display: block
+      content: ''
+      top: 0
+      bottom: 0
+      right: 0
+      background-color: white
+
+.large
+  & > div
+    height: 28px
+    &:not(:first-child)
+      margin-top: 22px
+    &:after
+      left: 100%
+    &:nth-child(2):after
+      left: calc(100% - 80px)
+    &:nth-child(3)
+      display: none
+  +desktop
+    & > div
+      height: 40px
+      &:not(:first-child)
+        margin-top: 32px
+      &:after
+        left: calc(100% - 160px)
+      &:nth-child(2):after
+        left: calc(100% - 525px)
+      &:nth-child(3)
+        display: none
+
+.small
+  & > div
+    height: 20px
+    &:not(:first-child)
+      margin-top: 14px
+    &:after
+      left: 100%
+    &:nth-child(2):after
+      left: calc(100% - 136px)
+    &:nth-child(3):after
+      left: calc(100% - 78px)
+  +desktop
+    & > div
+      height: 18px
+      &:not(:first-child)
+        margin-top: 16px
+      &:after
+        left: 100%
+      &:nth-child(3):after
+        left: calc(100% - 525px)
+
+@keyframes shimmer
+  0%
+    transform: translateX(-100%)
+  100%
+    transform: translateX(100%)

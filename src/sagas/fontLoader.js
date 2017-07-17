@@ -26,8 +26,8 @@ function* loadFont(window, document, {payload: family}) {
   yield enterCurtain()
   yield fork(showLoadingIndicator)
   try {
-    yield observer.load('한글', 10000) // FIXME
-  } catch(e) {}
+    yield observer.load('한글', 20000)
+  } catch(e) {} // FIXME
   yield put(createAction(FontChanged, family))
   yield call([window, window.scrollTo], 0, 0)
   yield leaveCurtain()
