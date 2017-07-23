@@ -7,10 +7,12 @@
   font-size: 12px
   font-weight: bold
   color: $light-gray
-  padding-top: 8.5px
-  border-top: 1px solid $oc-gray-3
+  padding-top: 8px
+  padding-bottom: 12px
   +desktop
     font-size: 15px
+    padding-bottom: 0
+    border-top: 1px solid $oc-gray-3
 
 .items
   +desktop
@@ -29,8 +31,8 @@
 
 .number
   color: $very-light-gray
-  font-size: 10px
-  margin-top: 2px
+  font-size: 13px
+  margin-top: 4px
   +desktop
     font-size: 12px
     margin-top: 3px
@@ -47,8 +49,10 @@
     display: block
     width: 0
     background: $very-light-green
-    transition: width .5s ease
+    transition: all .5s ease
     margin-top: 4px
+  &:hover
+    color: $oc-gray-9
   &:hover:after
     width: 100%
   .wrap.asSlideMenu &

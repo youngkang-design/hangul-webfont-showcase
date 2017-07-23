@@ -26,12 +26,21 @@ $area-border: solid 1px #e1e4e6
   color: $main-gray
   cursor: pointer
   text-decoration: none
+  transition: all 0.3s ease
+  transform-origin: 0 50%
+  &:hover
+    transform: scale(1.07)
+    color: $main-green
 
 .menuButton
   font-size: 16px
-  font-weight: bold
-  color: $light-green
+  color: $light-gray
   cursor: pointer
+  transition: all 0.3s ease
+  transform-origin: 100% 50%
+  &:hover
+    transform: scale(1.07)
+    color: $main-gray
 
 .caret
   position: relative
@@ -189,7 +198,7 @@ $area-border: solid 1px #e1e4e6
   width: 100%
   position: absolute
   z-index: 100
-  background-color: #e6fcf5
+  background-color: #f8fafb
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1)
   overflow: hidden
   transition: max-height .5s, top .5s
@@ -203,6 +212,13 @@ $area-border: solid 1px #e1e4e6
 
 .menuTitle
   @extend .title
+  &:hover a
+    color: $main-green
+  a
+    color: $main-gray
+    text-decoration: none
+    transition: all 0.3s ease
+    transform-origin: 0 50%
 
 .menuCloseButton
   @extend .menuButton

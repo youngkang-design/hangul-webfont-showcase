@@ -1,16 +1,17 @@
+@import '../../variables'
 @import '../../mixins'
 
 .wrap
   & > div
     position: relative
     width: 100%
-    background-color: #f6f7f9
+    background-color: $oc-gray-0
     overflow: hidden
     &:before
       height: 100%
       display: block
       content: ''
-      background-image: linear-gradient(to right, #f6f7f9 0%, #e9ebee 20%, #f6f7f9 40%, #f6f7f9 100%)
+      background-image: linear-gradient(to right, $oc-gray-0 0%, $oc-gray-1 20%, $oc-gray-0 40%, $oc-gray-0 100%)
       background-repeat: no-repeat
       animation-duration: 1s
       animation-fill-mode: forwards
