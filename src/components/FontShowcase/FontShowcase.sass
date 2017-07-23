@@ -9,6 +9,8 @@ $area-border: solid 1px #e1e4e6
 .topNav
   border-bottom: $area-border
   border-bottom-width: 1px
+  +desktop
+    border-bottom-width: 2px
 
 .topNavResponsive
   +responsive-container
@@ -16,7 +18,7 @@ $area-border: solid 1px #e1e4e6
   justify-content: space-between
   line-height: 67px
   +desktop
-    line-height: 88px
+    line-height: 80px
 
 .title
   font-size: 18px
@@ -24,12 +26,21 @@ $area-border: solid 1px #e1e4e6
   color: $main-gray
   cursor: pointer
   text-decoration: none
+  transition: all 0.3s ease
+  transform-origin: 0 50%
+  &:hover
+    transform: scale(1.07)
+    color: $main-green
 
 .menuButton
   font-size: 16px
-  font-weight: bold
-  color: $light-green
+  color: $light-gray
   cursor: pointer
+  transition: all 0.3s ease
+  transform-origin: 100% 50%
+  &:hover
+    transform: scale(1.07)
+    color: $main-gray
 
 .caret
   position: relative
@@ -43,6 +54,7 @@ $area-border: solid 1px #e1e4e6
   margin-top: 40px
   font-size: 30px
   color: $main-gray
+  font-weight: 700
   +desktop
     font-size: 32px
     margin-top: 63px
@@ -52,55 +64,44 @@ $area-border: solid 1px #e1e4e6
   font-size: 16px
   line-height: 1.7
   +desktop
-    font-size: 18px
+    font-size: 19px
     margin-top: 43px
+    div 
+      width: 840px
 
 .externalLinks
   +responsive-container
   display: flex
   margin-top: 30px
-  padding-bottom: 70px
+  padding-bottom: 42px
   border-bottom: $area-border
   +desktop
     border-bottom: none
     padding-bottom: 58px
     margin-top: 42px
-    padding-bottom: 74px
+    padding-bottom: 50px
 
 .linkButton
-  +desktop
-    height: 60px
-    line-height: 58px
-  height: 52px
-  line-height: 50px
-  border: solid 1px #63e6be
-  box-sizing: border-box
-  border-radius: 4px
-  color: $light-green
-  font-weight: bold
-  font-size: 16px
-  text-align: center
-  flex-grow: 1
-  cursor: pointer
-  user-select: none
-  transition: background-color .2s
   text-decoration: none
+  color: $main-green
+  font-size: 18px
+  font-weight: 700
+  padding-bottom: 3px
+  border-bottom: 2px solid $very-light-green
+  &:hover
+    border-color: $main-green
+    color: $light-green
+    transition: all 0.3s ease
   &:first-of-type
-    margin-right: 10px
+    margin-right: 12px
+    +desktop
+      margin-right: 6px
   +desktop
     flex-grow: 0
-    width: 220px
+    border-bottom-width: 3px
     &:first-of-type
-      margin-right: 20px
-  &:after
-    display: inline
-    content: '>'
-    color: #63e6be
-    margin-left: 7px
-  &:hover
-    background-color: rgba(99, 230, 190, 0.08)
-  &:active
-    background-color: rgba(99, 230, 190, 0.2)
+      margin-right: 16px
+
 
 .areaTitle
   color: $light-gray
@@ -108,20 +109,24 @@ $area-border: solid 1px #e1e4e6
   font-size: 16px
   +desktop
     font-size: 14px
+    border-top: 2px solid $oc-gray-2
+    padding-top: 8px
   .previewSection &
     margin-top: 40px
     +desktop
       margin-top: 16px
   .renderedImageSection &
-    margin-top: 40px
+    margin-top: 36px
+    padding-bottom: 18px
     +desktop
       margin-top: 0
+      padding-bottom: 0
 
 
 .previewSection
   +responsive-container
   overflow: hidden
-  padding-bottom: 80px
+  padding-bottom: 62px
   border-bottom: $area-border
   +desktop
     padding-bottom: 94px
@@ -135,9 +140,13 @@ $area-border: solid 1px #e1e4e6
 .renderedImageSection
   +responsive-container
   overflow: hidden
-  margin-bottom: 57px
+  margin-bottom: 36px
+  padding-bottom: 42px
+  border-bottom: $area-border
   +desktop
     margin-bottom: 93.5px
+    border-bottom: none
+    padding-bottom: 16px
 
 .renderedImageList
   margin-top: -15px
@@ -168,14 +177,17 @@ $area-border: solid 1px #e1e4e6
   margin-top: 7px
   box-sizing: border-box
   border: solid 1px #e1e4e6
-  border-radius: 4px
+  border-radius: 6px
   width: 100%
   height: auto
   +desktop
     margin-top: 8px
+    padding-top: 24px
 
 .fontPreviewWrap
-  margin-top: 16px
+  margin-top: 24px
+  &:first-of-type
+    margin-top: 36px
   +desktop
     margin-top: 26px
 
@@ -186,7 +198,7 @@ $area-border: solid 1px #e1e4e6
   width: 100%
   position: absolute
   z-index: 100
-  background-color: #e6fcf5
+  background-color: #f8fafb
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1)
   overflow: hidden
   transition: max-height .5s, top .5s
@@ -200,6 +212,13 @@ $area-border: solid 1px #e1e4e6
 
 .menuTitle
   @extend .title
+  &:hover a
+    color: $main-green
+  a
+    color: $main-gray
+    text-decoration: none
+    transition: all 0.3s ease
+    transform-origin: 0 50%
 
 .menuCloseButton
   @extend .menuButton
@@ -221,11 +240,18 @@ $area-border: solid 1px #e1e4e6
     float: right
     margin-top: 24px
   a
-    color: $main-green
+    color: $light-gray
+    &:hover
+      color: $main-gray
+      transition: 0.3 color ease
 
 .codeSampleSection
   +responsive-container
-  margin-bottom: 77px
+  margin-bottom: 62px
+  +desktop
+    margin-bottom: 122px
+  .areaTitle
+    padding-bottom: 16px
 
 .codeBlockWrap
   border-radius: 6px
@@ -233,7 +259,7 @@ $area-border: solid 1px #e1e4e6
   padding: 25px
   margin-top: 25px
   background-color: #f8fafb
-  user-select: auto;
+  user-select: auto
 
 // 코드 블록 텍스트 스타일은 리액트 파일(./index.js) 안에 있음
 

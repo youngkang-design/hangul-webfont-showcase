@@ -7,10 +7,12 @@
   font-size: 12px
   font-weight: bold
   color: $light-gray
-  padding-bottom: 8.5px
-  border-bottom: 1px solid #e1e4e6
+  padding-top: 8px
+  padding-bottom: 12px
   +desktop
-    font-size: 14px
+    font-size: 15px
+    padding-bottom: 0
+    border-top: 1px solid $oc-gray-3
 
 .items
   +desktop
@@ -28,21 +30,31 @@
     width: 33.3%
 
 .number
-  color: $main-green
-  font-size: 10px
-  font-weight: bold
-  margin-top: 2px
+  color: $very-light-gray
+  font-size: 13px
+  margin-top: 4px
   +desktop
     font-size: 12px
     margin-top: 3px
 
 .fontName
-  font-size: 31px
+  font-size: 35px
   color: $main-gray
   margin-left: 11px
-  &:hover 
-    color: $main-green
-    transition: color, 0.2s
+  border-bottom: 3px solid transparent
+  margin-bottom: -5px
+  &:after
+    content: ''
+    height: 4px
+    display: block
+    width: 0
+    background: $very-light-green
+    transition: all .5s ease
+    margin-top: 4px
+  &:hover
+    color: $oc-gray-9
+  &:hover:after
+    width: 100%
   .wrap.asSlideMenu &
     font-size: 18px
     +desktop

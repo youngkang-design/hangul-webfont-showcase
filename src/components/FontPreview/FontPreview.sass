@@ -5,22 +5,20 @@ $menu-height: 28px
 
 // text area -> javascript inline style
 .wrap
-  border: 1px solid #eaeeef
+  border: 2px solid #eaeeef
   border-radius: 8px
-  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.06)
-  padding: 25px 22px 35px
-
-.textArea
-  color: $main-gray
-  &::selection
-    background-color: $main-green
+  padding: 25px 22px 54px
+  textarea
+    color: $main-gray
+    &::selection
+      background-color: #c3fae8
 
 .menu
   display: flex
   padding-bottom: 20px
   height: $menu-height
-  border-bottom: 2px solid #eaeeef
-  margin-bottom: 34px
+  border-bottom: 1px solid #eaeeef
+  margin-bottom: 38px
 
 .contentWrap
   position: relative
@@ -78,7 +76,7 @@ $menu-height: 28px
 .caret
   position: absolute
   top: -1px
-  right: 20px
+  right: 18px
   display: block
   line-height: $menu-height
   content: '>'
@@ -87,6 +85,10 @@ $menu-height: 28px
   font-weight: bold
   pointer-events: none
   transition: color, 0.2s
+  +desktop
+    right: 20px
+  @media (max-width: 320px)
+    display: none
   .weightSelectWrap:hover &
     color: #63e6be
 
@@ -109,3 +111,9 @@ $menu-height: 28px
   transition: color, 0.2s
   .weightSelectWrap:hover &
     color: #12b886
+
+code 
+  font-family: "space mono", "fira code", monospace
+code, code span
+  &::selection
+    background-color: #c3fae8
