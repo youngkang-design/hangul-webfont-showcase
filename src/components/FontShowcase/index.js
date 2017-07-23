@@ -74,7 +74,7 @@ export default class FontShowcase extends React.Component {
         </div>
       </div>
       <div className={s.content}>
-        <div className={s.fontName} style={{fontFamily}}>{fontName}</div>
+        <div className={s.fontName} style={{fontFamily: `${fontFamily}-name`}}>{fontName}</div>
         <div className={s.fontDescription} style={{fontFamily}}>{fontDescription}</div>
       </div>
       <div className={s.externalLinks}>
