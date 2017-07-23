@@ -91,7 +91,7 @@ export default class FontPreview extends React.Component {
               return <option key={index} value={index}>{weightName}</option>
             })}
           </select>
-          <div className={s.caret}>&gt;</div>
+          <div className={s.caret}></div>
         </div>
         <div className={classNames(s.menuSection, s.alignButtons)}>
           <SVGAlignLeft
