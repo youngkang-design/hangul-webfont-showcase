@@ -134,6 +134,7 @@ export default class FontPreview extends React.Component {
       </div>
       <div className={s.contentWrap}>
         <TextArea
+        className={s.textArea}
         style={style}
         defaultValue={exampleText}
         ref={el => this.textArea = el} />
