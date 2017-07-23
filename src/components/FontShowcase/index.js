@@ -70,7 +70,7 @@ export default class FontShowcase extends React.Component {
       <div className={s.topNav}>
         <div className={s.topNavResponsive}>
           <a href='#/' className={s.title}>한글 웹폰트 글꼴보기집</a>
-          <div className={s.menuButton} onClick={onMenuOpened}>글꼴 목록<SVGCaret className={s.caret} /></div>
+          <div className={s.menuButton} onClick={onMenuOpened}>목록<SVGCaret className={s.caret} /></div>
         </div>
       </div>
       <div className={s.content}>
@@ -135,9 +135,9 @@ export default class FontShowcase extends React.Component {
       </div>
       <div className={classNames(s.menu, {[s.opening]: menuState === 'opened', [s.closing]: menuState === 'closed'})}>
         <div className={s.menuTitleArea}>
-          <div className={s.menuTitle}>한글 웹폰트 글꼴보기집</div>
+          <div className={s.menuTitle}><a href='#/'>한글 웹폰트 글꼴보기집</a></div>
           <div className={s.menuCloseButton} onClick={onMenuClosed}>
-            목록 닫기<SVGCaret className={s.caret} style={{transform: 'scaleY(-1)'}} />
+            닫기<SVGCaret className={s.caret} style={{transform: 'scaleY(-1)'}} />
           </div>
         </div>
         <div className={s.fontSelectorWrap}>
